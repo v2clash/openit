@@ -23,16 +23,6 @@ proxies:
 - name: "\U0001F1ED\U0001F1F0 HK 4 VMS"
   type: vmess
   server: 34.92.50.99
-  port: 64563
-  cipher: auto
-  uuid: 0eda82b0-d613-49e2-ac22-8ceafb0ec914
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 5 VMS"
-  type: vmess
-  server: 34.92.50.99
   port: 31535
   cipher: auto
   uuid: f23d62d4-f8da-4347-8cee-762804ecf677
@@ -40,6 +30,26 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: kcp
+- name: "\U0001F1ED\U0001F1F0 HK 5 VMS"
+  type: vmess
+  server: 34.92.50.99
+  port: 64563
+  cipher: auto
+  uuid: 0eda82b0-d613-49e2-ac22-8ceafb0ec914
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 6 VMS"
+  type: vmess
+  server: 34.92.50.99
+  port: 26389
+  cipher: auto
+  uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -49,6 +59,7 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 3 SSS"
   - "\U0001F1ED\U0001F1F0 HK 4 VMS"
   - "\U0001F1ED\U0001F1F0 HK 5 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 6 VMS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -60,5 +71,6 @@ proxy-groups:
   - "\U0001F1ED\U0001F1F0 HK 3 SSS"
   - "\U0001F1ED\U0001F1F0 HK 4 VMS"
   - "\U0001F1ED\U0001F1F0 HK 5 VMS"
+  - "\U0001F1ED\U0001F1F0 HK 6 VMS"
 rules:
 - "MATCH,\U0001F310 Proxy"
