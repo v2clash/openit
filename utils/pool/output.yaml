@@ -17,16 +17,6 @@ proxies:
 - name: "\U0001F1ED\U0001F1F0 HK 3 VMS"
   type: vmess
   server: 34.92.50.99
-  port: 64563
-  cipher: auto
-  uuid: 0eda82b0-d613-49e2-ac22-8ceafb0ec914
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 4 VMS"
-  type: vmess
-  server: 34.92.50.99
   port: 31535
   cipher: auto
   uuid: f23d62d4-f8da-4347-8cee-762804ecf677
@@ -34,6 +24,16 @@ proxies:
   tls: false
   skip-cert-verify: true
   network: kcp
+- name: "\U0001F1ED\U0001F1F0 HK 4 VMS"
+  type: vmess
+  server: 34.92.50.99
+  port: 64563
+  cipher: auto
+  uuid: 0eda82b0-d613-49e2-ac22-8ceafb0ec914
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1ED\U0001F1F0 HK 5 SSS"
   type: ss
   server: 34.92.50.99
@@ -365,7 +365,7 @@ proxies:
     path: /
     headers:
       host: mgtow_cdn.yunjisuan.cf
-- name: "\U0001F1FA\U0001F1F8 US 33 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 33 VMS"
   type: vmess
   server: cf-lt.sharecentre.online
   port: 80
@@ -455,7 +455,7 @@ proxy-groups:
   - "\U0001F1F7\U0001F1FA RU 30 VMS"
   - "\U0001F1FA\U0001F1F3 UN 31 VMS"
   - "\U0001F1FA\U0001F1F3 UN 32 VMS"
-  - "\U0001F1FA\U0001F1F8 US 33 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
   - "\U0001F1F8\U0001F1EA SE 35 SSS"
   - "\U0001F1EC\U0001F1E7 GB 36 SSS"
@@ -498,7 +498,7 @@ proxy-groups:
   - "\U0001F1F7\U0001F1FA RU 30 VMS"
   - "\U0001F1FA\U0001F1F3 UN 31 VMS"
   - "\U0001F1FA\U0001F1F3 UN 32 VMS"
-  - "\U0001F1FA\U0001F1F8 US 33 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 33 VMS"
   - "\U0001F1FA\U0001F1F8 US 34 VMS"
   - "\U0001F1F8\U0001F1EA SE 35 SSS"
   - "\U0001F1EC\U0001F1E7 GB 36 SSS"
