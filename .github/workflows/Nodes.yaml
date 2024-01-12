@@ -1,0 +1,88 @@
+name: Nodes
+
+on: 
+  schedule:
+    - cron: '*/35 0-8 * * 1-5'
+    - cron: '*/25 8-12 * * 1-5'
+    - cron: '*/55 12-21 * * 1-4'
+    - cron: '*/25 21-23 * * 1-5'
+    - cron: '*/25 14-21 * * 5'
+    - cron: '*/25 * * * 0,6'
+  workflow_dispatch:
+
+jobs: 
+  my-job: 
+    name: Max Job
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: "18.x"
+    - uses: actions/setup-python@v5.0.0
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git
+      run: |
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: npm
+      run: |
+         cd ./utils/rm/ && npm ci
+    - name: pip
+      run: |
+         pip install -r ./utils/pool/requirements.txt
+         pip install -r ./utils/clashcheck/requirements.txt
+    - name: pool
+      run: cd ./utils/pool/ && python main.py
+    - name: pull clashcheck file
+      id: clashcheck
+      run: timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q || timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q
+    - name: when pull has failed
+      if: ${{ failure() && steps.clashcheck.conclusion == 'failure' }}
+      run: echo -e "\033[31mFailed to pull clashcheck file.\033[0m"; rm utils/clashcheck/data/check.yaml
+    - name: move clashcheck to clash2base64
+      if: ${{ success() }}
+      run: mv ./utils/clashcheck/data/check.yaml ./utils/subconverter/check.yaml
+    - name: clash2base64
+      if: ${{ success() }}
+      run: ./utils/subconverter/subconverter -g --artifact "clash2base64"; rm utils/subconverter/check.yaml
+    - name: marge urls
+      if: ${{ success() }}
+      run: base64 -d ./utils/subconverter/check > ./utils/rm/url1 && cat ./utils/rm/url1 ./sub/url2 > ./utils/rm/url; rm ./utils/subconverter/check ./utils/rm/url1
+    - name: remove & rename
+      if: ${{ success() }}
+      run: cd ./utils/rm/ && npm start
+    - name: url & https
+      if: ${{ success() }}
+      run: |
+         rm ./utils/rm/url
+         mv ./utils/rm/out ./url
+         ./.github/url.sh > ./1
+         cp url 2
+         cat 1 2 > 3; rm 1 2
+         base64 3 > https -w 0; rm 3
+         base64 ./url > ./utils/subconverter/base64 -w 0
+         cp ./utils/pool/output.yaml ./utils/subconverter/output.yaml
+         sort url -o url
+    - name: long & Clash.yaml
+      if: ${{ success() }}
+      run: |
+         ./utils/subconverter/subconverter -g --artifact "clash"
+         ./utils/subconverter/subconverter -g --artifact "long"
+         ./utils/subconverter/subconverter -g --artifact "output"
+         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true
+         mv ./utils/subconverter/long ./long || true
+         mv ./utils/subconverter/output.txt ./utils/pool/output.txt || true
+         rm ./utils/subconverter/base64 ./utils/subconverter/output.yaml
+    - name: git push
+      if: ${{ always() }}
+      run: ./.github/update-repo.sh
+    - name: Delete workflow runs
+      uses: Mattraks/delete-workflow-runs@v2
+      with:
+        retain_days: 0
+        keep_minimum_runs: 3
