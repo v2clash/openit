@@ -219,8 +219,9 @@ proxies:
   - {name: IE 3 → hkpc, server: 54.78.209.62, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
   - {name: IE 4 → hkpc, server: 54.220.188.72, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: true, udp: true}
   - {name: IE 5 → hkpc, server: 23.92.127.133, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: IT 1 → hkpc, server: 95.164.46.154, port: 80, type: vmess, uuid: 431fda16-e0f8-4884-b4fd-965f03f86471, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: IT 2 → hkpc, server: 95.164.46.154, port: 8080, type: vmess, uuid: 431fda16-e0f8-4884-b4fd-965f03f86471, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: IT 1 → hkpc, server: jp2.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: IT 2 → hkpc, server: 95.164.46.154, port: 80, type: vmess, uuid: 431fda16-e0f8-4884-b4fd-965f03f86471, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: IT 3 → hkpc, server: 95.164.46.154, port: 8080, type: vmess, uuid: 431fda16-e0f8-4884-b4fd-965f03f86471, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
   - {name: KE 1 → hkpc, server: 62.12.116.66, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: LT 1 → hkpc, server: 94.131.13.110, port: 80, type: vmess, uuid: d3e40d59-b53c-4f4e-8867-bb598be864d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: lt1-vmess.sshmax.xyz}}, udp: true}
   - {name: MX 1 → hkpc, server: 190.103.179.23, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
@@ -341,38 +342,36 @@ proxies:
   - {name: 🇬🇧 GB 9 → hkpc, server: 51.145.68.57, port: 13751, type: ss, cipher: chacha20-ietf-poly1305, password: KlJlXXe9KjQX4mh4xC05c9, udp: true}
   - {name: 🇭🇰 HK 1 → hkpc, server: 202.64.1.167, port: 443, type: trojan, password: 69a6375b236941b8bf25ae2252cd7af7, sni: www.gpt123.one, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 2 → hkpc, server: 8.210.231.146, port: 1146, type: ss, cipher: aes-256-gcm, password: jmtgsmW40R, udp: true}
-  - {name: 🇭🇰 HK 3 → hkpc, server: hrgdvpn.flycdnedc55.vip, port: 80, type: vmess, uuid: 00a1da14-d55f-5f75-e346-79b985e1a723, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hrgdvpn.flycdnedc55.vip}}, udp: true}
-  - {name: 🇭🇰 HK 4 → hkpc, server: 1.65.223.223, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 🇭🇰 HK 5 → hkpc, server: 47.243.59.144, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 🇭🇰 HK 3 → hkpc, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: tw01.trojanyyds.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 4 → hkpc, server: hrgdvpn.flycdnedc55.vip, port: 80, type: vmess, uuid: 00a1da14-d55f-5f75-e346-79b985e1a723, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hrgdvpn.flycdnedc55.vip}}, udp: true}
+  - {name: 🇭🇰 HK 5 → hkpc, server: 1.65.223.223, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 🇭🇰 HK 6 → hkpc, server: 47.243.59.144, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 🇯🇵 JP 1 → hkpc, server: 57.180.11.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 JP 10 → hkpc, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇯🇵 JP 11 → hkpc, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇯🇵 JP 12 → hkpc, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: tw01.trojanyyds.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 13 → hkpc, server: jp8.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 14 → hkpc, server: 54.199.83.239, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
-  - {name: 🇯🇵 JP 15 → hkpc, server: 185.172.113.182, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇯🇵 JP 16 → hkpc, server: 185.172.113.182, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇯🇵 JP 17 → hkpc, server: jp7.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 18 → hkpc, server: jp1.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 19 → hkpc, server: 185.172.113.182, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇯🇵 JP 10 → hkpc, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵 JP 11 → hkpc, server: jp8.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 12 → hkpc, server: 54.199.83.239, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
+  - {name: 🇯🇵 JP 13 → hkpc, server: 185.172.113.182, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇯🇵 JP 14 → hkpc, server: 185.172.113.182, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇯🇵 JP 15 → hkpc, server: jp1.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 16 → hkpc, server: 185.172.113.182, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
   - {name: 🇯🇵 JP 2 → hkpc, server: 18.179.13.191, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇯🇵 JP 3 → hkpc, server: 185.172.113.182, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
   - {name: 🇯🇵 JP 4 → hkpc, server: 185.172.113.182, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
   - {name: 🇯🇵 JP 5 → hkpc, server: 13.231.164.174, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 JP 6 → hkpc, server: jp5.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 7 → hkpc, server: 54.64.183.76, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇯🇵 JP 8 → hkpc, server: jp.takeshi.wiki, port: 80, type: vmess, uuid: 59517e0b-ae1c-41d3-9c44-c44cea6f7546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /takeshi.wiki, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇯🇵 JP 9 → hkpc, server: 185.172.113.182, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇰🇷 KR 1 → hkpc, server: jp2.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 10 → hkpc, server: sg6.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 11 → hkpc, server: us4.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 12 → hkpc, server: p228.panda004.net, port: 59084, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇰🇷 KR 13 → hkpc, server: 43.201.253.222, port: 26540, type: vmess, uuid: c841c903-7657-41f7-bf55-b41dd9456179, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇰🇷 KR 2 → hkpc, server: sg3.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 3 → hkpc, server: jp6.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 4 → hkpc, server: 43.201.55.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 KR 5 → hkpc, server: unlk3.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 21852, type: trojan, password: 7ea8830e-3120-4973-a0b6-4c25219eadfc, sni: ip3691376078.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 6 → hkpc, server: p220.panda001.net, port: 53258, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇯🇵 JP 6 → hkpc, server: 54.64.183.76, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 JP 7 → hkpc, server: jp.takeshi.wiki, port: 80, type: vmess, uuid: 59517e0b-ae1c-41d3-9c44-c44cea6f7546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /takeshi.wiki, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: 🇯🇵 JP 8 → hkpc, server: 185.172.113.182, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇯🇵 JP 9 → hkpc, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 🇰🇷 KR 1 → hkpc, server: sg3.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 10 → hkpc, server: us4.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 11 → hkpc, server: p228.panda004.net, port: 59084, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇰🇷 KR 12 → hkpc, server: 43.201.253.222, port: 26540, type: vmess, uuid: c841c903-7657-41f7-bf55-b41dd9456179, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇰🇷 KR 13 → hkpc, server: jp7.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 2 → hkpc, server: jp6.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 3 → hkpc, server: 43.201.55.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇰🇷 KR 4 → hkpc, server: unlk3.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 21852, type: trojan, password: 7ea8830e-3120-4973-a0b6-4c25219eadfc, sni: ip3691376078.mobgslb.tbcache.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 5 → hkpc, server: p220.panda001.net, port: 53258, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇰🇷 KR 6 → hkpc, server: jp5.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 KR 7 → hkpc, server: 43.201.147.151, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇰🇷 KR 8 → hkpc, server: p234.panda004.net, port: 56906, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇰🇷 KR 9 → hkpc, server: p229.panda004.net, port: 57428, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
@@ -390,29 +389,31 @@ proxies:
   - {name: 🇸🇬 SG 1 → hkpc, server: 103.172.116.79, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
   - {name: 🇸🇬 SG 10 → hkpc, server: 103.172.116.79, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
   - {name: 🇸🇬 SG 11 → hkpc, server: 103.172.116.79, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 🇸🇬 SG 12 → hkpc, server: sg7.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 13 → hkpc, server: sg4.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 14 → hkpc, server: 103.172.116.79, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 🇸🇬 SG 15 → hkpc, server: 103.172.116.79, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: 🇸🇬 SG 16 → hkpc, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 🇸🇬 SG 17 → hkpc, server: 103.172.116.79, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 🇸🇬 SG 18 → hkpc, server: sg5.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 19 → hkpc, server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 🇸🇬 SG 12 → hkpc, server: sg6.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 13 → hkpc, server: sg7.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 14 → hkpc, server: sg4.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 15 → hkpc, server: 103.172.116.79, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: 🇸🇬 SG 16 → hkpc, server: 103.172.116.79, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 🇸🇬 SG 17 → hkpc, server: 103.172.116.79, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 🇸🇬 SG 18 → hkpc, server: 103.172.116.79, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 🇸🇬 SG 19 → hkpc, server: sg5.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 SG 2 → hkpc, server: 103.172.116.79, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: 🇸🇬 SG 20 → hkpc, server: 103.172.116.79, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: 🇸🇬 SG 21 → hkpc, server: 159.223.94.156, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti13.zingfast.vn}, udp: true}
-  - {name: 🇸🇬 SG 22 → hkpc, server: 103.172.116.90, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: 🇸🇬 SG 23 → hkpc, server: sg1.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 24 → hkpc, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 🇸🇬 SG 25 → hkpc, server: 103.172.116.79, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: 🇸🇬 SG 26 → hkpc, server: 13.213.46.196, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 SG 27 → hkpc, server: 103.172.116.79, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 🇸🇬 SG 28 → hkpc, server: 103.172.116.79, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: 🇸🇬 SG 29 → hkpc, server: 103.172.116.90, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 🇸🇬 SG 20 → hkpc, server: 103.172.116.79, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 🇸🇬 SG 21 → hkpc, server: 103.172.116.79, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 🇸🇬 SG 22 → hkpc, server: 159.223.94.156, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti13.zingfast.vn}, udp: true}
+  - {name: 🇸🇬 SG 23 → hkpc, server: 103.172.116.90, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 🇸🇬 SG 24 → hkpc, server: sg1.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 25 → hkpc, server: 103.172.116.79, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: 🇸🇬 SG 26 → hkpc, server: 103.172.116.79, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: 🇸🇬 SG 27 → hkpc, server: 13.213.46.196, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇸🇬 SG 28 → hkpc, server: 103.172.116.79, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 🇸🇬 SG 29 → hkpc, server: 103.172.116.79, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
   - {name: 🇸🇬 SG 3 → hkpc, server: 103.172.116.79, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: 🇸🇬 SG 30 → hkpc, server: 103.172.116.79, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 🇸🇬 SG 31 → hkpc, server: 103.172.116.79, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: 🇸🇬 SG 32 → hkpc, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 🇸🇬 SG 30 → hkpc, server: sg8.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 31 → hkpc, server: 103.172.116.90, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 🇸🇬 SG 32 → hkpc, server: 103.172.116.79, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: 🇸🇬 SG 33 → hkpc, server: 103.172.116.79, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
+  - {name: 🇸🇬 SG 34 → hkpc, server: 103.172.116.79, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
   - {name: 🇸🇬 SG 4 → hkpc, server: 54.251.168.143, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇸🇬 SG 5 → hkpc, server: 103.172.116.79, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
   - {name: 🇸🇬 SG 6 → hkpc, server: 202.79.171.239, port: 443, type: vmess, uuid: fb3583a3-7717-4fe5-9146-3301861f9f41, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.46130221.xyz}}, udp: true}
@@ -446,19 +447,19 @@ proxies:
   - {name: 🇺🇸 US 31 → hkpc, server: 38.147.191.185, port: 10241, type: vmess, uuid: e820d6f7-57ef-4575-99da-bcd7d318c742, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 32 → hkpc, server: 92.223.118.14, port: 443, type: vmess, uuid: 695ae833-9d90-4598-b431-c4cd214106c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tasnim.onthewifi.com}}, udp: true}
   - {name: 🇺🇸 US 33 → hkpc, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇸 US 34 → hkpc, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇺🇸 US 35 → hkpc, server: 38.121.43.142, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇸 US 36 → hkpc, server: 167.88.61.175, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇺🇸 US 37 → hkpc, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
-  - {name: 🇺🇸 US 38 → hkpc, server: 44.230.99.253, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 39 → hkpc, server: 66.181.33.108, port: 22666, type: vmess, uuid: 9f096c70-478a-4fef-b29f-0f14d6a06583, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 34 → hkpc, server: cf.openxai.link, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: eu2.openxai.link}}, udp: true}
+  - {name: 🇺🇸 US 35 → hkpc, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 US 36 → hkpc, server: 38.121.43.142, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 US 37 → hkpc, server: 167.88.61.175, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇸 US 38 → hkpc, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
+  - {name: 🇺🇸 US 39 → hkpc, server: 44.230.99.253, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 4 → hkpc, server: 89.116.180.179, port: 443, type: trojan, password: f34ec9d8-3ae0-46ba-94e7-a03eaf2af651, sni: p6us4.pqjc.buzz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 40 → hkpc, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 🇺🇸 US 41 → hkpc, server: 89.116.161.133, port: 443, type: trojan, password: f34ec9d8-3ae0-46ba-94e7-a03eaf2af651, sni: p1us1.pqjc.buzz, skip-cert-verify: true, network: ws, ws-opts: {path: "%252Fpq%252Fus1", headers: {Host: p1us1.pqjc.buzz}}, udp: true}
-  - {name: 🇺🇸 US 42 → hkpc, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 🇺🇸 US 43 → hkpc, server: 38.75.136.21, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇺🇸 US 44 → hkpc, server: 85.239.52.174, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: datdGFe4LkMN710aHedy, udp: true}
-  - {name: 🇺🇸 US 45 → hkpc, server: cf.openxai.link, port: 8080, type: vmess, uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu3.openxai.link}}, udp: true}
+  - {name: 🇺🇸 US 40 → hkpc, server: 66.181.33.108, port: 22666, type: vmess, uuid: 9f096c70-478a-4fef-b29f-0f14d6a06583, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 41 → hkpc, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 US 42 → hkpc, server: 89.116.161.133, port: 443, type: trojan, password: f34ec9d8-3ae0-46ba-94e7-a03eaf2af651, sni: p1us1.pqjc.buzz, skip-cert-verify: true, network: ws, ws-opts: {path: "%252Fpq%252Fus1", headers: {Host: p1us1.pqjc.buzz}}, udp: true}
+  - {name: 🇺🇸 US 43 → hkpc, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 44 → hkpc, server: 38.75.136.21, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 🇺🇸 US 45 → hkpc, server: 85.239.52.174, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: datdGFe4LkMN710aHedy, udp: true}
   - {name: 🇺🇸 US 46 → hkpc, server: 167.88.61.175, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 🇺🇸 US 47 → hkpc, server: 89.116.180.158, port: 443, type: trojan, password: f34ec9d8-3ae0-46ba-94e7-a03eaf2af651, sni: 3us2.pqjc.buzz, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 48 → hkpc, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
@@ -488,16 +489,15 @@ proxies:
   - {name: 🇺🇸 US 7 → hkpc, server: 38.121.43.65, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: 🇺🇸 US 70 → hkpc, server: 38.75.136.135, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: 🇺🇸 US 71 → hkpc, server: 38.68.134.202, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇸 US 72 → hkpc, server: sg8.421421.xyz, port: 20230, type: trojan, password: ad9a59fe-b588-47ae-b55a-634ac0eeea79, sni: 421421.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 73 → hkpc, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 🇺🇸 US 74 → hkpc, server: 38.68.134.202, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇺🇸 US 75 → hkpc, server: 38.75.136.135, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇺🇸 US 76 → hkpc, server: 38.75.136.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇸 US 77 → hkpc, server: 38.75.136.135, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇺🇸 US 78 → hkpc, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
-  - {name: 🇺🇸 US 79 → hkpc, server: 38.75.136.21, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 US 72 → hkpc, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 73 → hkpc, server: 38.68.134.202, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇺🇸 US 74 → hkpc, server: 38.75.136.135, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 US 75 → hkpc, server: 38.75.136.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 US 76 → hkpc, server: 38.75.136.135, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 🇺🇸 US 77 → hkpc, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
+  - {name: 🇺🇸 US 78 → hkpc, server: 38.75.136.21, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇸 US 79 → hkpc, server: 38.75.136.135, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: 🇺🇸 US 8 → hkpc, server: 169.197.141.186, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: tvX1v#NSFP_LG_bJ, udp: true}
-  - {name: 🇺🇸 US 80 → hkpc, server: 38.75.136.135, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: 🇺🇸 US 9 → hkpc, server: 167.88.61.175, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
@@ -541,6 +541,7 @@ proxy-groups:
       - IE 5 → hkpc
       - IT 1 → hkpc
       - IT 2 → hkpc
+      - IT 3 → hkpc
       - KE 1 → hkpc
       - LT 1 → hkpc
       - MX 1 → hkpc
@@ -664,6 +665,7 @@ proxy-groups:
       - 🇭🇰 HK 3 → hkpc
       - 🇭🇰 HK 4 → hkpc
       - 🇭🇰 HK 5 → hkpc
+      - 🇭🇰 HK 6 → hkpc
       - 🇯🇵 JP 1 → hkpc
       - 🇯🇵 JP 10 → hkpc
       - 🇯🇵 JP 11 → hkpc
@@ -672,9 +674,6 @@ proxy-groups:
       - 🇯🇵 JP 14 → hkpc
       - 🇯🇵 JP 15 → hkpc
       - 🇯🇵 JP 16 → hkpc
-      - 🇯🇵 JP 17 → hkpc
-      - 🇯🇵 JP 18 → hkpc
-      - 🇯🇵 JP 19 → hkpc
       - 🇯🇵 JP 2 → hkpc
       - 🇯🇵 JP 3 → hkpc
       - 🇯🇵 JP 4 → hkpc
@@ -733,6 +732,8 @@ proxy-groups:
       - 🇸🇬 SG 30 → hkpc
       - 🇸🇬 SG 31 → hkpc
       - 🇸🇬 SG 32 → hkpc
+      - 🇸🇬 SG 33 → hkpc
+      - 🇸🇬 SG 34 → hkpc
       - 🇸🇬 SG 4 → hkpc
       - 🇸🇬 SG 5 → hkpc
       - 🇸🇬 SG 6 → hkpc
@@ -817,7 +818,6 @@ proxy-groups:
       - 🇺🇸 US 78 → hkpc
       - 🇺🇸 US 79 → hkpc
       - 🇺🇸 US 8 → hkpc
-      - 🇺🇸 US 80 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 💡 自动选择
     type: url-test
@@ -850,6 +850,7 @@ proxy-groups:
       - IE 5 → hkpc
       - IT 1 → hkpc
       - IT 2 → hkpc
+      - IT 3 → hkpc
       - KE 1 → hkpc
       - LT 1 → hkpc
       - MX 1 → hkpc
@@ -973,6 +974,7 @@ proxy-groups:
       - 🇭🇰 HK 3 → hkpc
       - 🇭🇰 HK 4 → hkpc
       - 🇭🇰 HK 5 → hkpc
+      - 🇭🇰 HK 6 → hkpc
       - 🇯🇵 JP 1 → hkpc
       - 🇯🇵 JP 10 → hkpc
       - 🇯🇵 JP 11 → hkpc
@@ -981,9 +983,6 @@ proxy-groups:
       - 🇯🇵 JP 14 → hkpc
       - 🇯🇵 JP 15 → hkpc
       - 🇯🇵 JP 16 → hkpc
-      - 🇯🇵 JP 17 → hkpc
-      - 🇯🇵 JP 18 → hkpc
-      - 🇯🇵 JP 19 → hkpc
       - 🇯🇵 JP 2 → hkpc
       - 🇯🇵 JP 3 → hkpc
       - 🇯🇵 JP 4 → hkpc
@@ -1042,6 +1041,8 @@ proxy-groups:
       - 🇸🇬 SG 30 → hkpc
       - 🇸🇬 SG 31 → hkpc
       - 🇸🇬 SG 32 → hkpc
+      - 🇸🇬 SG 33 → hkpc
+      - 🇸🇬 SG 34 → hkpc
       - 🇸🇬 SG 4 → hkpc
       - 🇸🇬 SG 5 → hkpc
       - 🇸🇬 SG 6 → hkpc
@@ -1126,7 +1127,6 @@ proxy-groups:
       - 🇺🇸 US 78 → hkpc
       - 🇺🇸 US 79 → hkpc
       - 🇺🇸 US 8 → hkpc
-      - 🇺🇸 US 80 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 🇭🇰 香港节点
     type: url-test
@@ -1139,6 +1139,7 @@ proxy-groups:
       - 🇭🇰 HK 3 → hkpc
       - 🇭🇰 HK 4 → hkpc
       - 🇭🇰 HK 5 → hkpc
+      - 🇭🇰 HK 6 → hkpc
   - name: 🇯🇵 日本节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -1153,9 +1154,6 @@ proxy-groups:
       - 🇯🇵 JP 14 → hkpc
       - 🇯🇵 JP 15 → hkpc
       - 🇯🇵 JP 16 → hkpc
-      - 🇯🇵 JP 17 → hkpc
-      - 🇯🇵 JP 18 → hkpc
-      - 🇯🇵 JP 19 → hkpc
       - 🇯🇵 JP 2 → hkpc
       - 🇯🇵 JP 3 → hkpc
       - 🇯🇵 JP 4 → hkpc
@@ -1248,7 +1246,6 @@ proxy-groups:
       - 🇺🇸 US 78 → hkpc
       - 🇺🇸 US 79 → hkpc
       - 🇺🇸 US 8 → hkpc
-      - 🇺🇸 US 80 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 🇹🇼 台湾节点
     type: url-test
@@ -1310,6 +1307,8 @@ proxy-groups:
       - 🇸🇬 SG 30 → hkpc
       - 🇸🇬 SG 31 → hkpc
       - 🇸🇬 SG 32 → hkpc
+      - 🇸🇬 SG 33 → hkpc
+      - 🇸🇬 SG 34 → hkpc
       - 🇸🇬 SG 4 → hkpc
       - 🇸🇬 SG 5 → hkpc
       - 🇸🇬 SG 6 → hkpc
@@ -1363,6 +1362,7 @@ proxy-groups:
       - IE 5 → hkpc
       - IT 1 → hkpc
       - IT 2 → hkpc
+      - IT 3 → hkpc
       - KE 1 → hkpc
       - LT 1 → hkpc
       - MX 1 → hkpc
@@ -1501,6 +1501,7 @@ proxy-groups:
       - IE 5 → hkpc
       - IT 1 → hkpc
       - IT 2 → hkpc
+      - IT 3 → hkpc
       - KE 1 → hkpc
       - LT 1 → hkpc
       - MX 1 → hkpc
@@ -1624,6 +1625,7 @@ proxy-groups:
       - 🇭🇰 HK 3 → hkpc
       - 🇭🇰 HK 4 → hkpc
       - 🇭🇰 HK 5 → hkpc
+      - 🇭🇰 HK 6 → hkpc
       - 🇯🇵 JP 1 → hkpc
       - 🇯🇵 JP 10 → hkpc
       - 🇯🇵 JP 11 → hkpc
@@ -1632,9 +1634,6 @@ proxy-groups:
       - 🇯🇵 JP 14 → hkpc
       - 🇯🇵 JP 15 → hkpc
       - 🇯🇵 JP 16 → hkpc
-      - 🇯🇵 JP 17 → hkpc
-      - 🇯🇵 JP 18 → hkpc
-      - 🇯🇵 JP 19 → hkpc
       - 🇯🇵 JP 2 → hkpc
       - 🇯🇵 JP 3 → hkpc
       - 🇯🇵 JP 4 → hkpc
@@ -1693,6 +1692,8 @@ proxy-groups:
       - 🇸🇬 SG 30 → hkpc
       - 🇸🇬 SG 31 → hkpc
       - 🇸🇬 SG 32 → hkpc
+      - 🇸🇬 SG 33 → hkpc
+      - 🇸🇬 SG 34 → hkpc
       - 🇸🇬 SG 4 → hkpc
       - 🇸🇬 SG 5 → hkpc
       - 🇸🇬 SG 6 → hkpc
@@ -1777,7 +1778,6 @@ proxy-groups:
       - 🇺🇸 US 78 → hkpc
       - 🇺🇸 US 79 → hkpc
       - 🇺🇸 US 8 → hkpc
-      - 🇺🇸 US 80 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 👉 国内网站
     type: select
