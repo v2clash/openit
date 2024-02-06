@@ -209,6 +209,7 @@ proxies:
   - {name: IE 4 → hkpc, server: 18.203.113.220, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: true, udp: true}
   - {name: IE 5 → hkpc, server: 54.73.48.235, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: true, udp: true}
   - {name: IT 1 → hkpc, server: 213.109.192.213, port: 45771, type: ss, cipher: aes-256-gcm, password: zUxsR2obV1UfuYab, udp: true}
+  - {name: IT 2 → hkpc, server: masting.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: XlUFgoOqDlVqlZFD3Js0YA, udp: true}
   - {name: KE 1 → hkpc, server: 62.12.116.66, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: LU 1 → hkpc, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: irsoft.sytes.net}}, udp: true}
   - {name: LU 2 → hkpc, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
@@ -303,49 +304,47 @@ proxies:
   - {name: 🇨🇳 CN 56 → hkpc, server: gz.daxun.cyou, port: 26043, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 57 → hkpc, server: gz.daxun.cyou, port: 26038, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 58 → hkpc, server: aws.daxun.cyou, port: 38887, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /daxun/us3, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 🇨🇳 CN 59 → hkpc, server: 85832397-7e5d-cf1e-388a-a477bc2a2eb3.genshinimpact.moe, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 59 → hkpc, server: gz.daxun.cyou, port: 38017, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 6 → hkpc, server: service.ouluyun9803.com, port: 21001, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 🇨🇳 CN 60 → hkpc, server: gz.daxun.cyou, port: 38017, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 61 → hkpc, server: fa2bd1b9-34a8-1956-48e1-0dc0a5cc14ea.genshinimpact.moe, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 62 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20004, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 63 → hkpc, server: x.freeapp.buzz, port: 44463, type: ss, cipher: aes-256-gcm, password: 1ae0f67d-197e-4c80-8d91-a8388821c81b, udp: true}
-  - {name: 🇨🇳 CN 64 → hkpc, server: 39.164.141.93, port: 1080, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 65 → hkpc, server: 60.215.152.139, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 66 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20018, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 67 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20025, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 68 → hkpc, server: 223.113.54.131, port: 2001, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 69 → hkpc, server: gz.daxun.cyou, port: 26045, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 60 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20004, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 61 → hkpc, server: x.freeapp.buzz, port: 44463, type: ss, cipher: aes-256-gcm, password: 1ae0f67d-197e-4c80-8d91-a8388821c81b, udp: true}
+  - {name: 🇨🇳 CN 62 → hkpc, server: 39.164.141.93, port: 1080, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 63 → hkpc, server: 60.215.152.139, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 64 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20018, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 65 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20025, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 66 → hkpc, server: 223.113.54.131, port: 2001, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 67 → hkpc, server: gz.daxun.cyou, port: 26045, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 68 → hkpc, server: aws.daxun.cyou, port: 38889, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /daxun/us2, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 🇨🇳 CN 69 → hkpc, server: gz.daxun.cyou, port: 38027, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 CN 7 → hkpc, server: 223.113.54.130, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 70 → hkpc, server: aws.daxun.cyou, port: 38889, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /daxun/us2, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 🇨🇳 CN 71 → hkpc, server: gz.daxun.cyou, port: 38027, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 72 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20012, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 73 → hkpc, server: 223.113.54.131, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 74 → hkpc, server: gz.daxun.cyou, port: 38023, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 75 → hkpc, server: a99470bc-023c-0eb8-5aec-6ecafee2768a.genshinimpact.moe, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 76 → hkpc, server: gz.daxun.cyou, port: 26044, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 77 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20013, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 78 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20001, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 79 → hkpc, server: 183.237.20.149, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 70 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20012, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 71 → hkpc, server: 223.113.54.131, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 72 → hkpc, server: gz.daxun.cyou, port: 38023, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 73 → hkpc, server: a99470bc-023c-0eb8-5aec-6ecafee2768a.genshinimpact.moe, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 74 → hkpc, server: gz.daxun.cyou, port: 26044, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 75 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20013, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 76 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20001, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 77 → hkpc, server: 183.237.20.149, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 78 → hkpc, server: gz.daxun.cyou, port: 38013, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 79 → hkpc, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
   - {name: 🇨🇳 CN 8 → hkpc, server: aws.daxun.cyou, port: 38888, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /daxun/us1, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 🇨🇳 CN 80 → hkpc, server: gz.daxun.cyou, port: 38013, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 81 → hkpc, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 🇨🇳 CN 82 → hkpc, server: 223.113.54.140, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 83 → hkpc, server: 183.232.170.22, port: 30128, type: vmess, uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 84 → hkpc, server: 223.113.54.131, port: 2000, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 85 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20005, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 86 → hkpc, server: 60.215.152.138, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 87 → hkpc, server: 223.113.54.144, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 88 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20019, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 89 → hkpc, server: eeb463d2-7ea9-6a29-f976-8aafcd6d8d37.genshinimpact.moe, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 80 → hkpc, server: 223.113.54.140, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 81 → hkpc, server: 183.232.170.22, port: 30128, type: vmess, uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 82 → hkpc, server: 223.113.54.131, port: 2000, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 83 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20005, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 84 → hkpc, server: 60.215.152.138, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 85 → hkpc, server: 223.113.54.144, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 86 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20019, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 87 → hkpc, server: eeb463d2-7ea9-6a29-f976-8aafcd6d8d37.genshinimpact.moe, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 88 → hkpc, server: gz.daxun.cyou, port: 26035, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 89 → hkpc, server: 223.113.54.138, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
   - {name: 🇨🇳 CN 9 → hkpc, server: x.freeapp.buzz, port: 44421, type: ss, cipher: aes-256-gcm, password: 1ae0f67d-197e-4c80-8d91-a8388821c81b, udp: true}
-  - {name: 🇨🇳 CN 90 → hkpc, server: gz.daxun.cyou, port: 26035, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 91 → hkpc, server: 223.113.54.138, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 92 → hkpc, server: x.freeapp.buzz, port: 44462, type: ss, cipher: aes-256-gcm, password: 1ae0f67d-197e-4c80-8d91-a8388821c81b, udp: true}
-  - {name: 🇨🇳 CN 93 → hkpc, server: gz.daxun.cyou, port: 38001, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 94 → hkpc, server: gz.daxun.cyou, port: 38019, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 95 → hkpc, server: gz.daxun.cyou, port: 27034, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 96 → hkpc, server: x.freeapp.buzz, port: 44414, type: ss, cipher: aes-256-gcm, password: 1ae0f67d-197e-4c80-8d91-a8388821c81b, udp: true}
-  - {name: 🇨🇳 CN 97 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20011, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 90 → hkpc, server: x.freeapp.buzz, port: 44462, type: ss, cipher: aes-256-gcm, password: 1ae0f67d-197e-4c80-8d91-a8388821c81b, udp: true}
+  - {name: 🇨🇳 CN 91 → hkpc, server: gz.daxun.cyou, port: 38001, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 92 → hkpc, server: gz.daxun.cyou, port: 38019, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 93 → hkpc, server: gz.daxun.cyou, port: 27034, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 94 → hkpc, server: x.freeapp.buzz, port: 44414, type: ss, cipher: aes-256-gcm, password: 1ae0f67d-197e-4c80-8d91-a8388821c81b, udp: true}
+  - {name: 🇨🇳 CN 95 → hkpc, server: b17f1be8-b6fa-42b3-de2c-ece5ebbe6fd8.ritalin.dev, port: 20011, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
   - {name: 🇨🇳 TW 1 → hkpc, server: ffc3d492-fc46-ded9-a552-d5cb60c4d076.neo-awaken.uk, port: 80, type: vmess, uuid: f919e531-2a05-4b7a-9b40-3efdc71041ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 2 → hkpc, server: b23.ntbq.dynu.net, port: 2024, type: vmess, uuid: 9cc18dc9-993d-4d34-8638-904024f5efb5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 3 → hkpc, server: hinet.djjsvip.cfd, port: 443, type: trojan, password: 8c4c1021-3352-4c76-b4b6-26c38a137f92, sni: download.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
@@ -454,7 +453,6 @@ proxies:
   - {name: 🇳🇱 NL 5 → hkpc, server: 77.246.106.242, port: 10220, type: ss, cipher: chacha20-ietf-poly1305, password: B5JoPritUlCbuFoPzjpHuR, udp: true}
   - {name: 🇳🇱 NL 6 → hkpc, server: nngxxx.link, port: 443, type: vmess, uuid: 7fdc9ae0-4b55-4da2-f234-31079092b323, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nngxxx.link}}, udp: true}
   - {name: 🇳🇱 NL 7 → hkpc, server: 188.114.98.0, port: 443, type: trojan, password: 01596265-168b-46a7-bcb7-25662c7a9546, sni: hdfy7c1.foriran2.eu.org, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL 8 → hkpc, server: masting.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: XlUFgoOqDlVqlZFD3Js0YA, udp: true}
   - {name: 🇵🇱 PL 1 → hkpc, server: 37.252.10.45, port: 47580, type: ss, cipher: chacha20-ietf-poly1305, password: bzlLrRCRHdXp4SSL0voHBS, udp: true}
   - {name: 🇵🇱 PL 2 → hkpc, server: 217.30.10.70, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA, udp: true}
   - {name: 🇷🇺 RU 1 → hkpc, server: 109.107.189.185, port: 17397, type: ss, cipher: chacha20-ietf-poly1305, password: lrJVYHCiZA3VdRckEWQnSg, udp: true}
@@ -497,71 +495,74 @@ proxies:
   - {name: 🇸🇬 SG 9 → hkpc, server: 103.172.116.103, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
   - {name: 🇺🇸 US 1 → hkpc, server: 12.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /e678uhgyuh14, headers: {Host: 116.supermanapp.top}}, udp: true}
   - {name: 🇺🇸 US 10 → hkpc, server: 169.197.141.186, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: tvX1v#NSFP_LG_bJ, udp: true}
-  - {name: 🇺🇸 US 11 → hkpc, server: www.coldstone.club, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}, udp: true}
-  - {name: 🇺🇸 US 12 → hkpc, server: server33.beheshtbaneh.com, port: 8880, type: vmess, uuid: 0873fffc-414f-4140-a155-672129fd9a1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server33.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 13 → hkpc, server: 172.67.170.103, port: 2095, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yaghoob55freenodes.repaco69437403.workers.dev}}, udp: true}
-  - {name: 🇺🇸 US 14 → hkpc, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 15 → hkpc, server: 138.197.5.103, port: 443, type: trojan, password: xxoo, sni: us.blazeppn.info, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 16 → hkpc, server: 19.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /7898uuhuugdhfgh21, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 17 → hkpc, server: server10.beheshtbaneh.com, port: 8880, type: vmess, uuid: 66d4af1c-fcc3-479b-847c-3260253e1faa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server10.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 18 → hkpc, server: 205.134.180.145, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hgLCgfLRgB6d, udp: true}
-  - {name: 🇺🇸 US 19 → hkpc, server: 172.67.166.190, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}, udp: true}
+  - {name: 🇺🇸 US 11 → hkpc, server: server33.beheshtbaneh.com, port: 8880, type: vmess, uuid: 0873fffc-414f-4140-a155-672129fd9a1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server33.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 12 → hkpc, server: 172.67.170.103, port: 2095, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yaghoob55freenodes.repaco69437403.workers.dev}}, udp: true}
+  - {name: 🇺🇸 US 13 → hkpc, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 14 → hkpc, server: 138.197.5.103, port: 443, type: trojan, password: xxoo, sni: us.blazeppn.info, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 15 → hkpc, server: 19.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /7898uuhuugdhfgh21, headers: {Host: 116.supermanapp.top}}, udp: true}
+  - {name: 🇺🇸 US 16 → hkpc, server: v2ray.ibgfw.top, port: 2053, type: vmess, uuid: 5a5aadc2-8834-4e7b-895b-74ad155fbf24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2ray.ibgfw.top}}, udp: true}
+  - {name: 🇺🇸 US 17 → hkpc, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}, udp: true}
+  - {name: 🇺🇸 US 18 → hkpc, server: server10.beheshtbaneh.com, port: 8880, type: vmess, uuid: 66d4af1c-fcc3-479b-847c-3260253e1faa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server10.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 19 → hkpc, server: 205.134.180.145, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hgLCgfLRgB6d, udp: true}
   - {name: 🇺🇸 US 2 → hkpc, server: 29.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /e632323ruh43, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 20 → hkpc, server: index.zhaal.ir, port: 2086, type: vmess, uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: index.zhaal.ir}}, udp: true}
-  - {name: 🇺🇸 US 21 → hkpc, server: server6.beheshtbaneh.com, port: 8880, type: vmess, uuid: c5626b16-4c57-4d7e-8668-6b1ecda5c8b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server6.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 22 → hkpc, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
-  - {name: 🇺🇸 US 23 → hkpc, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 🇺🇸 US 24 → hkpc, server: 172.67.179.232, port: 443, type: vmess, uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: urnxewzvh.site}}, udp: true}
-  - {name: 🇺🇸 US 25 → hkpc, server: 172.67.235.237, port: 443, type: vmess, uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.31000oooowe2.bf}}, udp: true}
-  - {name: 🇺🇸 US 26 → hkpc, server: server33.beheshtbaneh.com, port: 8880, type: vmess, uuid: 0873fffc-414f-4140-a155-672129fd9a1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server33.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 27 → hkpc, server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 28 → hkpc, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 🇺🇸 US 29 → hkpc, server: urnxewzvh.site, port: 443, type: vmess, uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: urnxewzvh.site}}, udp: true}
-  - {name: 🇺🇸 US 3 → hkpc, server: linde06.indiavideo.sbs, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 🇺🇸 US 30 → hkpc, server: hms04.xmivideo.cfd, port: 443, type: vmess, uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xmivideo.cfd}}, udp: true}
-  - {name: 🇺🇸 US 31 → hkpc, server: 104.160.18.251, port: 443, type: trojan, password: 7522e2c27233459aab8d0f1d715828d0, sni: www.gpt123.one, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 32 → hkpc, server: 142.171.237.214, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.23168499.xyz}}, udp: true}
-  - {name: 🇺🇸 US 33 → hkpc, server: beacomf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: T1pb7XxxrolvPSb0u2xSOA, udp: true}
-  - {name: 🇺🇸 US 34 → hkpc, server: meroiy.icu, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: meroiy.icu}}, udp: true}
-  - {name: 🇺🇸 US 35 → hkpc, server: 74.119.194.192, port: 41743, type: ss, cipher: chacha20-ietf-poly1305, password: KBnPIuBNoue5acFpQ28LHg, udp: true}
-  - {name: 🇺🇸 US 36 → hkpc, server: ip.sb, port: 80, type: vmess, uuid: 113a74cc-f13b-48ec-bbb2-2bbab77a2f35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr1.ljyyds.top}}, udp: true}
-  - {name: 🇺🇸 US 37 → hkpc, server: 172.67.161.114, port: 8880, type: vmess, uuid: e305fc57-6153-4650-8c52-9a36865a199d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server3.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 38 → hkpc, server: 34.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kd1234kk52, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 39 → hkpc, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}, udp: true}
-  - {name: 🇺🇸 US 4 → hkpc, server: 132.145.132.227, port: 37121, type: vmess, uuid: 93845b50-26f6-4203-f5ad-4d231d4e8f45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 40 → hkpc, server: 205.134.180.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9Bvkw5aupNy8, udp: true}
-  - {name: 🇺🇸 US 41 → hkpc, server: 42.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kdakf212u60, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 42 → hkpc, server: 23.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /678ghuih8uuij137, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 43 → hkpc, server: afrhms16v.bestxray.buzz, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: afrhms16v.bestxray.buzz}}, udp: true}
-  - {name: 🇺🇸 US 44 → hkpc, server: 172.67.196.112, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kellie.makeup}}, udp: true}
-  - {name: 🇺🇸 US 45 → hkpc, server: 129.146.113.254, port: 43121, type: vmess, uuid: d53b39e2-925e-45b6-9389-46b9fa95878b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 46 → hkpc, server: 22.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hhhuhufk36io36, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 47 → hkpc, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
-  - {name: 🇺🇸 US 48 → hkpc, server: server2.beheshtbaneh.com, port: 8880, type: vmess, uuid: 8420ee38-4cf6-4d79-a9ec-2731207cf83a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server2.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 49 → hkpc, server: 66.181.33.108, port: 22666, type: vmess, uuid: 9f096c70-478a-4fef-b29f-0f14d6a06583, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 5 → hkpc, server: 172.67.161.114, port: 8880, type: vmess, uuid: 352ecc6f-21f1-4dc8-8177-4ebd52c55b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server5.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 50 → hkpc, server: 5.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /343111341ere31, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 51 → hkpc, server: 10.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fjdfk3fw2ssi2q33, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 52 → hkpc, server: server5.beheshtbaneh.com, port: 8880, type: vmess, uuid: 352ecc6f-21f1-4dc8-8177-4ebd52c55b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server5.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 53 → hkpc, server: 104.219.54.187, port: 27112, type: trojan, password: hJG3wNfsVa, sni: android.googleapis.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 54 → hkpc, server: 38.68.134.202, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇸 US 55 → hkpc, server: 80.92.205.112, port: 443, type: vmess, uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 56 → hkpc, server: 38.54.104.184, port: 18808, type: ss, cipher: aes-256-gcm, password: wwq6Xo5gJ8, udp: true}
-  - {name: 🇺🇸 US 57 → hkpc, server: 205.134.180.151, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2, udp: true}
-  - {name: 🇺🇸 US 58 → hkpc, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
-  - {name: 🇺🇸 US 59 → hkpc, server: 30.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /789bjuiouh44, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 6 → hkpc, server: fra.yj2022.gq, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fra.yj2022.gq}}, udp: true}
-  - {name: 🇺🇸 US 60 → hkpc, server: server4.beheshtbaneh.com, port: 8880, type: vmess, uuid: b7e04f2a-2a6a-4b74-a11e-06f658c36391, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server4.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 US 61 → hkpc, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
-  - {name: 🇺🇸 US 62 → hkpc, server: 172.67.220.64, port: 443, type: vmess, uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.31000oooowe2.bf}}, udp: true}
-  - {name: 🇺🇸 US 63 → hkpc, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}, udp: true}
-  - {name: 🇺🇸 US 64 → hkpc, server: 18.218.239.120, port: 36326, type: ss, cipher: chacha20-ietf-poly1305, password: H6cSTf8vDbVH1cpnrAxFj2, udp: true}
-  - {name: 🇺🇸 US 65 → hkpc, server: 23.94.76.55, port: 51981, type: ss, cipher: aes-256-gcm, password: 06gZKkeC2J, udp: true}
-  - {name: 🇺🇸 US 66 → hkpc, server: nina.bond, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nina.bond}}, udp: true}
-  - {name: 🇺🇸 US 67 → hkpc, server: hkd1.quickerlink.xyz, port: 443, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /h6jr23x9h3lqiitg, headers: {Host: hkd1.quickerlink.xyz}}, udp: true}
-  - {name: 🇺🇸 US 68 → hkpc, server: 32.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kdakfj32u9u46, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 69 → hkpc, server: 40.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kda22k58, headers: {Host: 116.supermanapp.top}}, udp: true}
-  - {name: 🇺🇸 US 7 → hkpc, server: 35.91.34.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 US 20 → hkpc, server: 172.67.166.190, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}, udp: true}
+  - {name: 🇺🇸 US 21 → hkpc, server: index.zhaal.ir, port: 2086, type: vmess, uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: index.zhaal.ir}}, udp: true}
+  - {name: 🇺🇸 US 22 → hkpc, server: server26.beheshtbaneh.com, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 23 → hkpc, server: daxun.info, port: 38001, type: vmess, uuid: ac5852df-8caf-4d86-8c77-93a7092f66f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 24 → hkpc, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
+  - {name: 🇺🇸 US 25 → hkpc, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 26 → hkpc, server: www.crispyrainbow.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}, udp: true}
+  - {name: 🇺🇸 US 27 → hkpc, server: hms02opi.fxiaomi.sbs, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hms02.fxiaomi.sbs}}, udp: true}
+  - {name: 🇺🇸 US 28 → hkpc, server: obdii.cfd, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: obdii.cfd}}, udp: true}
+  - {name: 🇺🇸 US 29 → hkpc, server: 172.67.179.232, port: 443, type: vmess, uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: urnxewzvh.site}}, udp: true}
+  - {name: 🇺🇸 US 3 → hkpc, server: 132.145.132.227, port: 37121, type: vmess, uuid: 93845b50-26f6-4203-f5ad-4d231d4e8f45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 30 → hkpc, server: 172.67.235.237, port: 443, type: vmess, uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.31000oooowe2.bf}}, udp: true}
+  - {name: 🇺🇸 US 31 → hkpc, server: server33.beheshtbaneh.com, port: 8880, type: vmess, uuid: 0873fffc-414f-4140-a155-672129fd9a1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server33.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 32 → hkpc, server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 33 → hkpc, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 34 → hkpc, server: urnxewzvh.site, port: 443, type: vmess, uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: urnxewzvh.site}}, udp: true}
+  - {name: 🇺🇸 US 35 → hkpc, server: 104.160.18.251, port: 443, type: trojan, password: 7522e2c27233459aab8d0f1d715828d0, sni: www.gpt123.one, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 36 → hkpc, server: 142.171.237.214, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.23168499.xyz}}, udp: true}
+  - {name: 🇺🇸 US 37 → hkpc, server: beacomf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: T1pb7XxxrolvPSb0u2xSOA, udp: true}
+  - {name: 🇺🇸 US 38 → hkpc, server: meroiy.icu, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: meroiy.icu}}, udp: true}
+  - {name: 🇺🇸 US 39 → hkpc, server: 74.119.194.192, port: 41743, type: ss, cipher: chacha20-ietf-poly1305, password: KBnPIuBNoue5acFpQ28LHg, udp: true}
+  - {name: 🇺🇸 US 4 → hkpc, server: 172.67.161.114, port: 8880, type: vmess, uuid: 352ecc6f-21f1-4dc8-8177-4ebd52c55b12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server5.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 40 → hkpc, server: server20.beheshtbaneh.com, port: 8880, type: vmess, uuid: 7ee41eb4-0594-4e2d-92a7-5dd3ee513692, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server20.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 41 → hkpc, server: server26.beheshtbaneh.com, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 42 → hkpc, server: 172.67.161.114, port: 8880, type: vmess, uuid: e305fc57-6153-4650-8c52-9a36865a199d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server3.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 43 → hkpc, server: 34.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kd1234kk52, headers: {Host: 116.supermanapp.top}}, udp: true}
+  - {name: 🇺🇸 US 44 → hkpc, server: 205.134.180.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9Bvkw5aupNy8, udp: true}
+  - {name: 🇺🇸 US 45 → hkpc, server: 42.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kdakf212u60, headers: {Host: 116.supermanapp.top}}, udp: true}
+  - {name: 🇺🇸 US 46 → hkpc, server: 23.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /678ghuih8uuij137, headers: {Host: 116.supermanapp.top}}, udp: true}
+  - {name: 🇺🇸 US 47 → hkpc, server: afrhms16v.bestxray.buzz, port: 443, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: afrhms16v.bestxray.buzz}}, udp: true}
+  - {name: 🇺🇸 US 48 → hkpc, server: 172.67.196.112, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kellie.makeup}}, udp: true}
+  - {name: 🇺🇸 US 49 → hkpc, server: 129.146.113.254, port: 43121, type: vmess, uuid: d53b39e2-925e-45b6-9389-46b9fa95878b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 5 → hkpc, server: fra.yj2022.gq, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fra.yj2022.gq}}, udp: true}
+  - {name: 🇺🇸 US 50 → hkpc, server: 22.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hhhuhufk36io36, headers: {Host: 116.supermanapp.top}}, udp: true}
+  - {name: 🇺🇸 US 51 → hkpc, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
+  - {name: 🇺🇸 US 52 → hkpc, server: 66.181.33.108, port: 22666, type: vmess, uuid: 9f096c70-478a-4fef-b29f-0f14d6a06583, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 53 → hkpc, server: 5.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /343111341ere31, headers: {Host: 116.supermanapp.top}}, udp: true}
+  - {name: 🇺🇸 US 54 → hkpc, server: 10.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fjdfk3fw2ssi2q33, headers: {Host: 116.supermanapp.top}}, udp: true}
+  - {name: 🇺🇸 US 55 → hkpc, server: server8.beheshtbaneh.com, port: 8880, type: vmess, uuid: f46acc36-5edf-4c5f-8c8f-3520ff46cdd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server8.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 56 → hkpc, server: 104.219.54.187, port: 27112, type: trojan, password: hJG3wNfsVa, sni: android.googleapis.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 57 → hkpc, server: server12.beheshtbaneh.com, port: 8880, type: vmess, uuid: 39c03e6d-9efd-4e5a-8851-cd4ed0ec303c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server12.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 58 → hkpc, server: 38.68.134.202, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 US 59 → hkpc, server: 80.92.205.112, port: 443, type: vmess, uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 6 → hkpc, server: 35.91.34.93, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 US 60 → hkpc, server: 38.54.104.184, port: 18808, type: ss, cipher: aes-256-gcm, password: wwq6Xo5gJ8, udp: true}
+  - {name: 🇺🇸 US 61 → hkpc, server: 205.134.180.151, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2, udp: true}
+  - {name: 🇺🇸 US 62 → hkpc, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
+  - {name: 🇺🇸 US 63 → hkpc, server: 30.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /789bjuiouh44, headers: {Host: 116.supermanapp.top}}, udp: true}
+  - {name: 🇺🇸 US 64 → hkpc, server: server4.beheshtbaneh.com, port: 8880, type: vmess, uuid: b7e04f2a-2a6a-4b74-a11e-06f658c36391, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server4.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 65 → hkpc, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
+  - {name: 🇺🇸 US 66 → hkpc, server: 172.67.220.64, port: 443, type: vmess, uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.31000oooowe2.bf}}, udp: true}
+  - {name: 🇺🇸 US 67 → hkpc, server: 18.218.239.120, port: 36326, type: ss, cipher: chacha20-ietf-poly1305, password: H6cSTf8vDbVH1cpnrAxFj2, udp: true}
+  - {name: 🇺🇸 US 68 → hkpc, server: 23.94.76.55, port: 51981, type: ss, cipher: aes-256-gcm, password: 06gZKkeC2J, udp: true}
+  - {name: 🇺🇸 US 69 → hkpc, server: hkd1.quickerlink.xyz, port: 443, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /h6jr23x9h3lqiitg, headers: {Host: hkd1.quickerlink.xyz}}, udp: true}
+  - {name: 🇺🇸 US 7 → hkpc, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}, udp: true}
+  - {name: 🇺🇸 US 70 → hkpc, server: server9.beheshtbaneh.com, port: 8880, type: vmess, uuid: 62575747-37b4-4bf8-9ac5-95d214003be1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server9.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 71 → hkpc, server: 32.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kdakfj32u9u46, headers: {Host: 116.supermanapp.top}}, udp: true}
+  - {name: 🇺🇸 US 72 → hkpc, server: 40.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kda22k58, headers: {Host: 116.supermanapp.top}}, udp: true}
   - {name: 🇺🇸 US 8 → hkpc, server: 172.67.212.114, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}, udp: true}
   - {name: 🇺🇸 US 9 → hkpc, server: 37.openiisee.monster, port: 443, type: vmess, uuid: 949cd83b-3a98-3106-b8d7-6ae0fc6443e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kdakfdff55, headers: {Host: 116.supermanapp.top}}, udp: true}
 proxy-groups:
@@ -594,6 +595,7 @@ proxy-groups:
       - IE 4 → hkpc
       - IE 5 → hkpc
       - IT 1 → hkpc
+      - IT 2 → hkpc
       - KE 1 → hkpc
       - LU 1 → hkpc
       - LU 2 → hkpc
@@ -729,8 +731,6 @@ proxy-groups:
       - 🇨🇳 CN 93 → hkpc
       - 🇨🇳 CN 94 → hkpc
       - 🇨🇳 CN 95 → hkpc
-      - 🇨🇳 CN 96 → hkpc
-      - 🇨🇳 CN 97 → hkpc
       - 🇨🇳 TW 1 → hkpc
       - 🇨🇳 TW 2 → hkpc
       - 🇨🇳 TW 3 → hkpc
@@ -839,7 +839,6 @@ proxy-groups:
       - 🇳🇱 NL 5 → hkpc
       - 🇳🇱 NL 6 → hkpc
       - 🇳🇱 NL 7 → hkpc
-      - 🇳🇱 NL 8 → hkpc
       - 🇵🇱 PL 1 → hkpc
       - 🇵🇱 PL 2 → hkpc
       - 🇷🇺 RU 1 → hkpc
@@ -947,6 +946,9 @@ proxy-groups:
       - 🇺🇸 US 68 → hkpc
       - 🇺🇸 US 69 → hkpc
       - 🇺🇸 US 7 → hkpc
+      - 🇺🇸 US 70 → hkpc
+      - 🇺🇸 US 71 → hkpc
+      - 🇺🇸 US 72 → hkpc
       - 🇺🇸 US 8 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 💡 自动选择
@@ -968,6 +970,7 @@ proxy-groups:
       - IE 4 → hkpc
       - IE 5 → hkpc
       - IT 1 → hkpc
+      - IT 2 → hkpc
       - KE 1 → hkpc
       - LU 1 → hkpc
       - LU 2 → hkpc
@@ -1103,8 +1106,6 @@ proxy-groups:
       - 🇨🇳 CN 93 → hkpc
       - 🇨🇳 CN 94 → hkpc
       - 🇨🇳 CN 95 → hkpc
-      - 🇨🇳 CN 96 → hkpc
-      - 🇨🇳 CN 97 → hkpc
       - 🇨🇳 TW 1 → hkpc
       - 🇨🇳 TW 2 → hkpc
       - 🇨🇳 TW 3 → hkpc
@@ -1213,7 +1214,6 @@ proxy-groups:
       - 🇳🇱 NL 5 → hkpc
       - 🇳🇱 NL 6 → hkpc
       - 🇳🇱 NL 7 → hkpc
-      - 🇳🇱 NL 8 → hkpc
       - 🇵🇱 PL 1 → hkpc
       - 🇵🇱 PL 2 → hkpc
       - 🇷🇺 RU 1 → hkpc
@@ -1321,6 +1321,9 @@ proxy-groups:
       - 🇺🇸 US 68 → hkpc
       - 🇺🇸 US 69 → hkpc
       - 🇺🇸 US 7 → hkpc
+      - 🇺🇸 US 70 → hkpc
+      - 🇺🇸 US 71 → hkpc
+      - 🇺🇸 US 72 → hkpc
       - 🇺🇸 US 8 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 🇭🇰 香港节点
@@ -1431,6 +1434,9 @@ proxy-groups:
       - 🇺🇸 US 68 → hkpc
       - 🇺🇸 US 69 → hkpc
       - 🇺🇸 US 7 → hkpc
+      - 🇺🇸 US 70 → hkpc
+      - 🇺🇸 US 71 → hkpc
+      - 🇺🇸 US 72 → hkpc
       - 🇺🇸 US 8 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 🇹🇼 台湾节点
@@ -1523,6 +1529,7 @@ proxy-groups:
       - IE 4 → hkpc
       - IE 5 → hkpc
       - IT 1 → hkpc
+      - IT 2 → hkpc
       - KE 1 → hkpc
       - LU 1 → hkpc
       - LU 2 → hkpc
@@ -1658,8 +1665,6 @@ proxy-groups:
       - 🇨🇳 CN 93 → hkpc
       - 🇨🇳 CN 94 → hkpc
       - 🇨🇳 CN 95 → hkpc
-      - 🇨🇳 CN 96 → hkpc
-      - 🇨🇳 CN 97 → hkpc
       - 🇩🇪 DE 1 → hkpc
       - 🇩🇪 DE 10 → hkpc
       - 🇩🇪 DE 11 → hkpc
@@ -1725,7 +1730,6 @@ proxy-groups:
       - 🇳🇱 NL 5 → hkpc
       - 🇳🇱 NL 6 → hkpc
       - 🇳🇱 NL 7 → hkpc
-      - 🇳🇱 NL 8 → hkpc
       - 🇵🇱 PL 1 → hkpc
       - 🇵🇱 PL 2 → hkpc
       - 🇷🇺 RU 1 → hkpc
@@ -1749,6 +1753,7 @@ proxy-groups:
       - IE 4 → hkpc
       - IE 5 → hkpc
       - IT 1 → hkpc
+      - IT 2 → hkpc
       - KE 1 → hkpc
       - LU 1 → hkpc
       - LU 2 → hkpc
@@ -1884,8 +1889,6 @@ proxy-groups:
       - 🇨🇳 CN 93 → hkpc
       - 🇨🇳 CN 94 → hkpc
       - 🇨🇳 CN 95 → hkpc
-      - 🇨🇳 CN 96 → hkpc
-      - 🇨🇳 CN 97 → hkpc
       - 🇨🇳 TW 1 → hkpc
       - 🇨🇳 TW 2 → hkpc
       - 🇨🇳 TW 3 → hkpc
@@ -1994,7 +1997,6 @@ proxy-groups:
       - 🇳🇱 NL 5 → hkpc
       - 🇳🇱 NL 6 → hkpc
       - 🇳🇱 NL 7 → hkpc
-      - 🇳🇱 NL 8 → hkpc
       - 🇵🇱 PL 1 → hkpc
       - 🇵🇱 PL 2 → hkpc
       - 🇷🇺 RU 1 → hkpc
@@ -2102,6 +2104,9 @@ proxy-groups:
       - 🇺🇸 US 68 → hkpc
       - 🇺🇸 US 69 → hkpc
       - 🇺🇸 US 7 → hkpc
+      - 🇺🇸 US 70 → hkpc
+      - 🇺🇸 US 71 → hkpc
+      - 🇺🇸 US 72 → hkpc
       - 🇺🇸 US 8 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 👉 国内网站
