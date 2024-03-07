@@ -208,6 +208,7 @@ proxies:
   - {name: CH 1 → hkpc, server: 156.146.62.160, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
   - {name: CL 1 → hkpc, server: 190.120.230.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: CO 1 → hkpc, server: 190.120.231.45, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: CR 1 → hkpc, server: cloudflare.cfgo.cc, port: 80, type: vmess, uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: wap.hostmjj.com}}, udp: true}
   - {name: CY 1 → hkpc, server: 213.169.137.221, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: EC 1 → hkpc, server: 179.49.5.114, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: FI 1 → hkpc, server: 37.143.129.230, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
@@ -252,157 +253,158 @@ proxies:
   - {name: 🇨🇦 CA 9 → hkpc, server: 23.227.38.22, port: 8080, type: vmess, uuid: e9d23b60-6e44-45a2-b24f-c8521c04c310, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: e9d23b60-6e44-45a2-b24f-c8521c04c310-vm, headers: {Host: per-essex-patterns-bowling.trycloudflare.com}}, udp: true}
   - {name: 🇨🇳 CN 1 → hkpc, server: 231103level4.unclemanco.com, port: 10059, type: ssr, cipher: aes-256-cfb, password: 2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 10 → hkpc, server: east.2333lol.fuckddos.shop, port: 39776, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 100 → hkpc, server: 231103level3.unclemanco.com, port: 1901, type: ssr, cipher: chacha20-ietf, password: ay2loud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 101 → hkpc, server: ddns.olucloud.subapi.cc, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇨🇳 CN 102 → hkpc, server: 231103level2.unclemanco.com, port: 10057, type: ssr, cipher: aes-256-cfb, password: 2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 103 → hkpc, server: 231103level3.unclemanco.com, port: 28507, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 105 → hkpc, server: 231103level4.unclemanco.com, port: 39070, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 107 → hkpc, server: east.2333lol.fuckddos.shop, port: 30985, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 108 → hkpc, server: 231103level3.unclemanco.com, port: 29601, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 101 → hkpc, server: 231103level3.unclemanco.com, port: 1901, type: ssr, cipher: chacha20-ietf, password: ay2loud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 102 → hkpc, server: ddns.olucloud.subapi.cc, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
+  - {name: 🇨🇳 CN 103 → hkpc, server: 231103level2.unclemanco.com, port: 10057, type: ssr, cipher: aes-256-cfb, password: 2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 104 → hkpc, server: 231103level3.unclemanco.com, port: 28507, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 106 → hkpc, server: 231103level4.unclemanco.com, port: 39070, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 108 → hkpc, server: east.2333lol.fuckddos.shop, port: 30985, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 109 → hkpc, server: 231103level3.unclemanco.com, port: 29601, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 11 → hkpc, server: xibaozi.19890604.day, port: 10837, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 110 → hkpc, server: 231103level3.unclemanco.com, port: 20452, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 111 → hkpc, server: rk2.izoizoizo.top, port: 47146, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 112 → hkpc, server: 231103level3.unclemanco.com, port: 1876, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 113 → hkpc, server: 231103level3.unclemanco.com, port: 20004, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 114 → hkpc, server: xibaozi.19890604.day, port: 10836, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 115 → hkpc, server: 231103level3.unclemanco.com, port: 29574, type: ssr, cipher: chacha20-ietf, password: ay2l23ud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 116 → hkpc, server: 231103levelx.unclemanco.com, port: 11112, type: ssr, cipher: aes-256-cfb, password: V2efNeJZr, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 117 → hkpc, server: 231103level1.unclemanco.com, port: 10020, type: ssr, cipher: aes-256-cfb, password: aa2x2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 118 → hkpc, server: 10thzcm.xn--wbr85ozt0asys8qt.net, port: 36697, type: ss, cipher: chacha20-ietf-poly1305, password: 86e3471b-0b08-40b5-a297-2a54632757b9, udp: true}
-  - {name: 🇨🇳 CN 119 → hkpc, server: east.2333lol.fuckddos.shop, port: 30128, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 111 → hkpc, server: 231103level3.unclemanco.com, port: 20452, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 112 → hkpc, server: rk2.izoizoizo.top, port: 47146, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 113 → hkpc, server: 231103level3.unclemanco.com, port: 1876, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 114 → hkpc, server: 231103level3.unclemanco.com, port: 20004, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 115 → hkpc, server: xibaozi.19890604.day, port: 10836, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 116 → hkpc, server: 231103level3.unclemanco.com, port: 29574, type: ssr, cipher: chacha20-ietf, password: ay2l23ud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 117 → hkpc, server: 231103levelx.unclemanco.com, port: 11112, type: ssr, cipher: aes-256-cfb, password: V2efNeJZr, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 118 → hkpc, server: 231103level1.unclemanco.com, port: 10020, type: ssr, cipher: aes-256-cfb, password: aa2x2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 119 → hkpc, server: 10thzcm.xn--wbr85ozt0asys8qt.net, port: 36697, type: ss, cipher: chacha20-ietf-poly1305, password: 86e3471b-0b08-40b5-a297-2a54632757b9, udp: true}
   - {name: 🇨🇳 CN 12 → hkpc, server: 231103level4.unclemanco.com, port: 10055, type: ssr, cipher: aes-256-cfb, password: 2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 120 → hkpc, server: rk2.izoizoizo.top, port: 43505, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 121 → hkpc, server: 231103level3.unclemanco.com, port: 29999, type: ssr, cipher: chacha20-ietf, password: ayucles1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 123 → hkpc, server: east.2333lol.fuckddos.shop, port: 30547, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 124 → hkpc, server: 231103level2.unclemanco.com, port: 1000, type: ssr, cipher: chacha20-ietf, password: ayucjrsll, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 125 → hkpc, server: rk2.izoizoizo.top, port: 13402, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 126 → hkpc, server: 231103level4.unclemanco.com, port: 11102, type: ssr, cipher: aes-256-cfb, password: "d1da&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 127 → hkpc, server: 231103levelx.unclemanco.com, port: 38012, type: ssr, cipher: aes-256-cfb, password: "dajkdessa&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 128 → hkpc, server: 231103level1.unclemanco.com, port: 29501, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 129 → hkpc, server: xijinping.19890604.day, port: 10818, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 120 → hkpc, server: east.2333lol.fuckddos.shop, port: 30128, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 121 → hkpc, server: rk2.izoizoizo.top, port: 43505, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 122 → hkpc, server: 231103level3.unclemanco.com, port: 29999, type: ssr, cipher: chacha20-ietf, password: ayucles1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 124 → hkpc, server: east.2333lol.fuckddos.shop, port: 30547, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 125 → hkpc, server: 231103level2.unclemanco.com, port: 1000, type: ssr, cipher: chacha20-ietf, password: ayucjrsll, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 126 → hkpc, server: rk2.izoizoizo.top, port: 13402, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 127 → hkpc, server: 231103level4.unclemanco.com, port: 11102, type: ssr, cipher: aes-256-cfb, password: "d1da&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 128 → hkpc, server: 231103levelx.unclemanco.com, port: 38012, type: ssr, cipher: aes-256-cfb, password: "dajkdessa&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 129 → hkpc, server: 231103level1.unclemanco.com, port: 29501, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 13 → hkpc, server: 231103level2.unclemanco.com, port: 27543, type: ssr, cipher: aes-256-cfb, password: wedsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 135 → hkpc, server: 231103level4.unclemanco.com, port: 36592, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 136 → hkpc, server: 231103level2.unclemanco.com, port: 2790, type: ssr, cipher: aes-256-cfb, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 137 → hkpc, server: 231103level4.unclemanco.com, port: 6558, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 139 → hkpc, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 🇨🇳 CN 130 → hkpc, server: xijinping.19890604.day, port: 10818, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 136 → hkpc, server: 231103level4.unclemanco.com, port: 36592, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 137 → hkpc, server: 231103level2.unclemanco.com, port: 2790, type: ssr, cipher: aes-256-cfb, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 138 → hkpc, server: 231103level4.unclemanco.com, port: 6558, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 14 → hkpc, server: 231103level4.unclemanco.com, port: 36590, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 141 → hkpc, server: 231103level3.unclemanco.com, port: 26700, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 142 → hkpc, server: rk2.izoizoizo.top, port: 48621, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 143 → hkpc, server: ddns.olucloud.subapi.cc, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇨🇳 CN 144 → hkpc, server: xibaozi.19890604.day, port: 10850, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 145 → hkpc, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 🇨🇳 CN 146 → hkpc, server: rk2.izoizoizo.top, port: 42281, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 147 → hkpc, server: tw1.indianonlinejob2.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: a9464b90-986d-4253-b950-882537c5ca9e, udp: true}
-  - {name: 🇨🇳 CN 148 → hkpc, server: rk2.izoizoizo.top, port: 49931, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 149 → hkpc, server: ef30833c.t1v0e4l6w3-fb-hk05.6pzfwf.com, port: 56005, type: ss, cipher: chacha20-ietf-poly1305, password: 48jteov83q2, udp: true}
+  - {name: 🇨🇳 CN 140 → hkpc, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 🇨🇳 CN 142 → hkpc, server: 231103level3.unclemanco.com, port: 26700, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 143 → hkpc, server: rk2.izoizoizo.top, port: 48621, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 144 → hkpc, server: ddns.olucloud.subapi.cc, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
+  - {name: 🇨🇳 CN 145 → hkpc, server: xibaozi.19890604.day, port: 10850, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 146 → hkpc, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 🇨🇳 CN 147 → hkpc, server: rk2.izoizoizo.top, port: 42281, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 148 → hkpc, server: tw1.indianonlinejob2.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: a9464b90-986d-4253-b950-882537c5ca9e, udp: true}
+  - {name: 🇨🇳 CN 149 → hkpc, server: rk2.izoizoizo.top, port: 49931, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
   - {name: 🇨🇳 CN 15 → hkpc, server: falungong.19890604.day, port: 10826, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 150 → hkpc, server: rk2.izoizoizo.top, port: 20810, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 151 → hkpc, server: 231103level3.unclemanco.com, port: 20003, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 152 → hkpc, server: rk2.izoizoizo.top, port: 21038, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 154 → hkpc, server: 231103level2.unclemanco.com, port: 29008, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 155 → hkpc, server: rk2.izoizoizo.top, port: 21059, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 156 → hkpc, server: 231103level4.unclemanco.com, port: 11271, type: ssr, cipher: aes-256-cfb, password: 2sa2/321a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 157 → hkpc, server: 231103level3.unclemanco.com, port: 26001, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 159 → hkpc, server: 231103level4.unclemanco.com, port: 6450, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 160 → hkpc, server: east.2333lol.fuckddos.shop, port: 30147, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 162 → hkpc, server: 231103level2.unclemanco.com, port: 2200, type: ssr, cipher: aes-256-cfb, password: "dajsdkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 163 → hkpc, server: 231103level4.unclemanco.com, port: 10013, type: ssr, cipher: aes-256-cfb, password: aa2sacs/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 164 → hkpc, server: east.2333lol.fuckddos.shop, port: 35207, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 168 → hkpc, server: 231103level3.unclemanco.com, port: 29545, type: ssr, cipher: chacha20-ietf, password: a12cloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 169 → hkpc, server: 231103level3.unclemanco.com, port: 28009, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 150 → hkpc, server: ef30833c.t1v0e4l6w3-fb-hk05.6pzfwf.com, port: 56005, type: ss, cipher: chacha20-ietf-poly1305, password: 48jteov83q2, udp: true}
+  - {name: 🇨🇳 CN 151 → hkpc, server: rk2.izoizoizo.top, port: 20810, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 152 → hkpc, server: 231103level3.unclemanco.com, port: 20003, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 153 → hkpc, server: rk2.izoizoizo.top, port: 21038, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 155 → hkpc, server: 231103level2.unclemanco.com, port: 29008, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 156 → hkpc, server: rk2.izoizoizo.top, port: 21059, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 157 → hkpc, server: 231103level4.unclemanco.com, port: 11271, type: ssr, cipher: aes-256-cfb, password: 2sa2/321a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 158 → hkpc, server: 231103level3.unclemanco.com, port: 26001, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 160 → hkpc, server: 231103level4.unclemanco.com, port: 6450, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 161 → hkpc, server: east.2333lol.fuckddos.shop, port: 30147, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 163 → hkpc, server: 231103level2.unclemanco.com, port: 2200, type: ssr, cipher: aes-256-cfb, password: "dajsdkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 164 → hkpc, server: 231103level4.unclemanco.com, port: 10013, type: ssr, cipher: aes-256-cfb, password: aa2sacs/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 165 → hkpc, server: east.2333lol.fuckddos.shop, port: 35207, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 169 → hkpc, server: 231103level3.unclemanco.com, port: 29545, type: ssr, cipher: chacha20-ietf, password: a12cloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 17 → hkpc, server: lsgy.lanxingyun.cn, port: 39210, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
-  - {name: 🇨🇳 CN 170 → hkpc, server: 231103level4.unclemanco.com, port: 2541, type: ssr, cipher: aes-256-cfb, password: ayds232112sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 172 → hkpc, server: east.2333lol.fuckddos.shop, port: 36946, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 173 → hkpc, server: 231103level3.unclemanco.com, port: 20010, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 175 → hkpc, server: rk2.izoizoizo.top, port: 26860, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 177 → hkpc, server: 231103level3.unclemanco.com, port: 1875, type: ssr, cipher: chacha20-ietf, password: ayucew2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 182 → hkpc, server: wqfuinwqffq.dfcloud.xyz, port: 30818, type: ss, cipher: chacha20-ietf-poly1305, password: 8e949d75-3510-4678-8593-3c5032dd931a, udp: true}
-  - {name: 🇨🇳 CN 186 → hkpc, server: 231103level2.unclemanco.com, port: 39072, type: ssr, cipher: aes-256-cfb, password: "dajkbgja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 188 → hkpc, server: rk2.izoizoizo.top, port: 40465, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 189 → hkpc, server: xijinping.19890604.day, port: 10817, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 170 → hkpc, server: 231103level3.unclemanco.com, port: 28009, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 171 → hkpc, server: 231103level4.unclemanco.com, port: 2541, type: ssr, cipher: aes-256-cfb, password: ayds232112sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 173 → hkpc, server: east.2333lol.fuckddos.shop, port: 36946, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 174 → hkpc, server: 231103level3.unclemanco.com, port: 20010, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 176 → hkpc, server: rk2.izoizoizo.top, port: 26860, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 178 → hkpc, server: 231103level3.unclemanco.com, port: 1875, type: ssr, cipher: chacha20-ietf, password: ayucew2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 183 → hkpc, server: wqfuinwqffq.dfcloud.xyz, port: 30818, type: ss, cipher: chacha20-ietf-poly1305, password: 8e949d75-3510-4678-8593-3c5032dd931a, udp: true}
+  - {name: 🇨🇳 CN 187 → hkpc, server: 231103level2.unclemanco.com, port: 39072, type: ssr, cipher: aes-256-cfb, password: "dajkbgja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 189 → hkpc, server: rk2.izoizoizo.top, port: 40465, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
   - {name: 🇨🇳 CN 19 → hkpc, server: 231103level2.unclemanco.com, port: 29602, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 190 → hkpc, server: rk2.izoizoizo.top, port: 26276, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 191 → hkpc, server: 231103level3.unclemanco.com, port: 37862, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 193 → hkpc, server: 231103level1.unclemanco.com, port: 28006, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 194 → hkpc, server: falungong.19890604.day, port: 10823, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 195 → hkpc, server: 231103level4.unclemanco.com, port: 2406, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 196 → hkpc, server: 231103level4.unclemanco.com, port: 9666, type: ssr, cipher: aes-256-cfb, password: aa2sda31a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 197 → hkpc, server: 231103level2.unclemanco.com, port: 39003, type: ssr, cipher: aes-256-cfb, password: ayds23sd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 198 → hkpc, server: rk2.izoizoizo.top, port: 12042, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 190 → hkpc, server: xijinping.19890604.day, port: 10817, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 191 → hkpc, server: rk2.izoizoizo.top, port: 26276, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 192 → hkpc, server: 231103level3.unclemanco.com, port: 37862, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 194 → hkpc, server: 231103level1.unclemanco.com, port: 28006, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 195 → hkpc, server: falungong.19890604.day, port: 10823, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 196 → hkpc, server: 231103level4.unclemanco.com, port: 2406, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 197 → hkpc, server: 231103level4.unclemanco.com, port: 9666, type: ssr, cipher: aes-256-cfb, password: aa2sda31a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 198 → hkpc, server: 231103level2.unclemanco.com, port: 39003, type: ssr, cipher: aes-256-cfb, password: ayds23sd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 199 → hkpc, server: rk2.izoizoizo.top, port: 12042, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
   - {name: 🇨🇳 CN 2 → hkpc, server: 231103level2.unclemanco.com, port: 1900, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 20 → hkpc, server: 231103level4.unclemanco.com, port: 19996, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 200 → hkpc, server: 231103level3.unclemanco.com, port: 20011, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 201 → hkpc, server: lsgy.lanxingyun.cn, port: 33111, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
-  - {name: 🇨🇳 CN 202 → hkpc, server: 231103level4.unclemanco.com, port: 19982, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 203 → hkpc, server: east.2333lol.fuckddos.shop, port: 12347, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 205 → hkpc, server: 231103level1.unclemanco.com, port: 2687, type: ssr, cipher: aes-256-cfb, password: fs23l/, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 206 → hkpc, server: 231103level1.unclemanco.com, port: 5004, type: ssr, cipher: chacha20-ietf, password: ayucl12s1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 207 → hkpc, server: 231103level4.unclemanco.com, port: 2214, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&sdja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 208 → hkpc, server: east.2333lol.fuckddos.shop, port: 29776, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 209 → hkpc, server: 231103level4.unclemanco.com, port: 3035, type: ssr, cipher: aes-256-cfb, password: aa2sda31a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 210 → hkpc, server: 231103level4.unclemanco.com, port: 2208, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 201 → hkpc, server: 231103level3.unclemanco.com, port: 20011, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 202 → hkpc, server: lsgy.lanxingyun.cn, port: 33111, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
+  - {name: 🇨🇳 CN 203 → hkpc, server: 231103level4.unclemanco.com, port: 19982, type: ssr, cipher: aes-256-cfb, password: dajkdkjda&dj23gsa, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 204 → hkpc, server: east.2333lol.fuckddos.shop, port: 12347, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 206 → hkpc, server: 231103level1.unclemanco.com, port: 2687, type: ssr, cipher: aes-256-cfb, password: fs23l/, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 207 → hkpc, server: 231103level1.unclemanco.com, port: 5004, type: ssr, cipher: chacha20-ietf, password: ayucl12s1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 208 → hkpc, server: 231103level4.unclemanco.com, port: 2214, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&sdja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 209 → hkpc, server: east.2333lol.fuckddos.shop, port: 29776, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 210 → hkpc, server: 231103level4.unclemanco.com, port: 3035, type: ssr, cipher: aes-256-cfb, password: aa2sda31a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 211 → hkpc, server: 231103level4.unclemanco.com, port: 2208, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 22 → hkpc, server: rk2.izoizoizo.top, port: 28185, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
   - {name: 🇨🇳 CN 24 → hkpc, server: 231103level2.unclemanco.com, port: 2400, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 25 → hkpc, server: 231103level3.unclemanco.com, port: 29542, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 27 → hkpc, server: lsgy.lanxingyun.cn, port: 22225, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
-  - {name: 🇨🇳 CN 28 → hkpc, server: 231103level3.unclemanco.com, port: 20016, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 30 → hkpc, server: rk2.izoizoizo.top, port: 19117, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 32 → hkpc, server: 231103level2.unclemanco.com, port: 38001, type: ssr, cipher: aes-256-cfb, password: "dajkdkjdssa&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 33 → hkpc, server: 231103level2.unclemanco.com, port: 6042, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 34 → hkpc, server: xijinping.19890604.day, port: 10813, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 35 → hkpc, server: 231103level2.unclemanco.com, port: 20060, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 36 → hkpc, server: 231103level4.unclemanco.com, port: 10011, type: ssr, cipher: aes-256-cfb, password: aa2cs/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 38 → hkpc, server: 231103level4.unclemanco.com, port: 1034, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 39 → hkpc, server: 231103levelx.unclemanco.com, port: 11110, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 41 → hkpc, server: 231103level3.unclemanco.com, port: 20036, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 42 → hkpc, server: 231103levelx.unclemanco.com, port: 2204, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 43 → hkpc, server: 231103level2.unclemanco.com, port: 38010, type: ssr, cipher: aes-256-cfb, password: "dajkdr&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 44 → hkpc, server: 231103level1.unclemanco.com, port: 27777, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 45 → hkpc, server: lsgy.lanxingyun.cn, port: 13163, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
-  - {name: 🇨🇳 CN 46 → hkpc, server: 231103level2.unclemanco.com, port: 19998, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 47 → hkpc, server: 231103level2.unclemanco.com, port: 1001, type: ssr, cipher: chacha20-ietf, password: fsfal2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 48 → hkpc, server: 231103level2.unclemanco.com, port: 5555, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 49 → hkpc, server: 231103level3.unclemanco.com, port: 1823, type: ssr, cipher: chacha20-ietf, password: ayuclsaa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 28 → hkpc, server: ahcm.dyqufx.com, port: 44507, type: ss, cipher: chacha20-ietf-poly1305, password: 86e3471b-0b08-40b5-a297-2a54632757b9, udp: true}
+  - {name: 🇨🇳 CN 29 → hkpc, server: 231103level3.unclemanco.com, port: 20016, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 31 → hkpc, server: rk2.izoizoizo.top, port: 19117, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 33 → hkpc, server: 231103level2.unclemanco.com, port: 38001, type: ssr, cipher: aes-256-cfb, password: "dajkdkjdssa&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 34 → hkpc, server: 231103level2.unclemanco.com, port: 6042, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 35 → hkpc, server: xijinping.19890604.day, port: 10813, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 36 → hkpc, server: 231103level2.unclemanco.com, port: 20060, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 37 → hkpc, server: 231103level4.unclemanco.com, port: 10011, type: ssr, cipher: aes-256-cfb, password: aa2cs/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 39 → hkpc, server: 231103level4.unclemanco.com, port: 1034, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 40 → hkpc, server: 231103levelx.unclemanco.com, port: 11110, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 42 → hkpc, server: 231103level3.unclemanco.com, port: 20036, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 43 → hkpc, server: 231103levelx.unclemanco.com, port: 2204, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 44 → hkpc, server: 231103level2.unclemanco.com, port: 38010, type: ssr, cipher: aes-256-cfb, password: "dajkdr&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 45 → hkpc, server: 231103level1.unclemanco.com, port: 27777, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 46 → hkpc, server: lsgy.lanxingyun.cn, port: 13163, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
+  - {name: 🇨🇳 CN 47 → hkpc, server: 231103level2.unclemanco.com, port: 19998, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 48 → hkpc, server: 231103level2.unclemanco.com, port: 1001, type: ssr, cipher: chacha20-ietf, password: fsfal2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 49 → hkpc, server: 231103level2.unclemanco.com, port: 5555, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 5 → hkpc, server: east.2333lol.fuckddos.shop, port: 30199, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 50 → hkpc, server: 183.237.20.150, port: 44602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 51 → hkpc, server: rk2.izoizoizo.top, port: 36722, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 52 → hkpc, server: 231103level3.unclemanco.com, port: 11002, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 53 → hkpc, server: rk2.izoizoizo.top, port: 34507, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 54 → hkpc, server: rk2.izoizoizo.top, port: 25226, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 56 → hkpc, server: 231103level2.unclemanco.com, port: 1234, type: ssr, cipher: aes-256-cfb, password: ay232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 57 → hkpc, server: xibaozi.19890604.day, port: 10847, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 58 → hkpc, server: lsgy.lanxingyun.cn, port: 20263, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
-  - {name: 🇨🇳 CN 59 → hkpc, server: east.2333lol.fuckddos.shop, port: 24551, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 50 → hkpc, server: 231103level3.unclemanco.com, port: 1823, type: ssr, cipher: chacha20-ietf, password: ayuclsaa, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 51 → hkpc, server: 183.237.20.150, port: 44602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 52 → hkpc, server: rk2.izoizoizo.top, port: 36722, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 53 → hkpc, server: 231103level3.unclemanco.com, port: 11002, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 54 → hkpc, server: rk2.izoizoizo.top, port: 34507, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 55 → hkpc, server: rk2.izoizoizo.top, port: 25226, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 57 → hkpc, server: 231103level2.unclemanco.com, port: 1234, type: ssr, cipher: aes-256-cfb, password: ay232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 58 → hkpc, server: xibaozi.19890604.day, port: 10847, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 59 → hkpc, server: lsgy.lanxingyun.cn, port: 20263, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
   - {name: 🇨🇳 CN 6 → hkpc, server: xibaozi.19890604.day, port: 10845, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 60 → hkpc, server: rk2.izoizoizo.top, port: 31583, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 62 → hkpc, server: 231103level1.unclemanco.com, port: 20001, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 63 → hkpc, server: east.2333lol.fuckddos.shop, port: 24515, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 64 → hkpc, server: rk2.izoizoizo.top, port: 49725, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 65 → hkpc, server: 231103level2.unclemanco.com, port: 39200, type: ssr, cipher: aes-256-cfb, password: "dadk2jat*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 68 → hkpc, server: 231103level2.unclemanco.com, port: 20033, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 60 → hkpc, server: east.2333lol.fuckddos.shop, port: 24551, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 61 → hkpc, server: rk2.izoizoizo.top, port: 31583, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 63 → hkpc, server: 231103level1.unclemanco.com, port: 20001, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 64 → hkpc, server: east.2333lol.fuckddos.shop, port: 24515, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 65 → hkpc, server: rk2.izoizoizo.top, port: 49725, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 66 → hkpc, server: 231103level2.unclemanco.com, port: 39200, type: ssr, cipher: aes-256-cfb, password: "dadk2jat*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 69 → hkpc, server: 231103level2.unclemanco.com, port: 20033, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 7 → hkpc, server: rk2.izoizoizo.top, port: 46091, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 71 → hkpc, server: 231103level2.unclemanco.com, port: 37864, type: ssr, cipher: aes-256-cfb, password: "dajkdkjdsa&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 73 → hkpc, server: 231103level3.unclemanco.com, port: 20006, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 74 → hkpc, server: 231103level4.unclemanco.com, port: 1134, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 76 → hkpc, server: 231103level4.unclemanco.com, port: 10071, type: ssr, cipher: aes-256-cfb, password: 2sa2/321a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 79 → hkpc, server: rk2.izoizoizo.top, port: 30337, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 72 → hkpc, server: 231103level2.unclemanco.com, port: 37864, type: ssr, cipher: aes-256-cfb, password: "dajkdkjdsa&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 74 → hkpc, server: 231103level3.unclemanco.com, port: 20006, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 75 → hkpc, server: 231103level4.unclemanco.com, port: 1134, type: ssr, cipher: aes-256-cfb, password: ayds232sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 77 → hkpc, server: 231103level4.unclemanco.com, port: 10071, type: ssr, cipher: aes-256-cfb, password: 2sa2/321a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇨🇳 CN 8 → hkpc, server: 231103level2.unclemanco.com, port: 20040, type: ssr, cipher: aes-256-cfb, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 80 → hkpc, server: east.2333lol.fuckddos.shop, port: 21337, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 81 → hkpc, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 🇨🇳 CN 82 → hkpc, server: kr2.indianonlinejob2.com, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: a9464b90-986d-4253-b950-882537c5ca9e, udp: true}
-  - {name: 🇨🇳 CN 83 → hkpc, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
-  - {name: 🇨🇳 CN 84 → hkpc, server: east.2333lol.fuckddos.shop, port: 25111, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
-  - {name: 🇨🇳 CN 85 → hkpc, server: rk2.izoizoizo.top, port: 31983, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
-  - {name: 🇨🇳 CN 87 → hkpc, server: 231103level3.unclemanco.com, port: 20021, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 88 → hkpc, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇨🇳 CN 89 → hkpc, server: 2a54a289.k3c0d7u0o8-fb-jp02.6pzfwf.com, port: 56032, type: ss, cipher: chacha20-ietf-poly1305, password: 48jteov83q2, udp: true}
+  - {name: 🇨🇳 CN 80 → hkpc, server: rk2.izoizoizo.top, port: 30337, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 81 → hkpc, server: east.2333lol.fuckddos.shop, port: 21337, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 82 → hkpc, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 🇨🇳 CN 83 → hkpc, server: kr2.indianonlinejob2.com, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: a9464b90-986d-4253-b950-882537c5ca9e, udp: true}
+  - {name: 🇨🇳 CN 84 → hkpc, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
+  - {name: 🇨🇳 CN 85 → hkpc, server: east.2333lol.fuckddos.shop, port: 25111, type: ss, cipher: chacha20-ietf-poly1305, password: 0ef40172-50ce-465f-86d9-fe8ff495cf83, udp: true}
+  - {name: 🇨🇳 CN 86 → hkpc, server: rk2.izoizoizo.top, port: 31983, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 88 → hkpc, server: 231103level3.unclemanco.com, port: 20021, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 89 → hkpc, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
   - {name: 🇨🇳 CN 9 → hkpc, server: tank.19890604.day, port: 10830, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 90 → hkpc, server: xibaozi.19890604.day, port: 10841, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 92 → hkpc, server: 231103level4.unclemanco.com, port: 39001, type: ssr, cipher: aes-256-cfb, password: "dajkl&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 94 → hkpc, server: lsgy.lanxingyun.cn, port: 35791, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
-  - {name: 🇨🇳 CN 95 → hkpc, server: 231103levelx.unclemanco.com, port: 20047, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 96 → hkpc, server: 231103level3.unclemanco.com, port: 20029, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 97 → hkpc, server: rk2.izoizoizo.top, port: 40460, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
+  - {name: 🇨🇳 CN 90 → hkpc, server: 2a54a289.k3c0d7u0o8-fb-jp02.6pzfwf.com, port: 56032, type: ss, cipher: chacha20-ietf-poly1305, password: 48jteov83q2, udp: true}
+  - {name: 🇨🇳 CN 91 → hkpc, server: xibaozi.19890604.day, port: 10841, type: trojan, password: 1fce7b14-5ce9-4dfd-aea6-db881d50ec87, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 93 → hkpc, server: 231103level4.unclemanco.com, port: 39001, type: ssr, cipher: aes-256-cfb, password: "dajkl&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 95 → hkpc, server: lsgy.lanxingyun.cn, port: 35791, type: ss, cipher: chacha20-ietf-poly1305, password: 41f96983-1ab9-4634-a916-98ef1b557cb4, udp: true}
+  - {name: 🇨🇳 CN 96 → hkpc, server: 231103levelx.unclemanco.com, port: 20047, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 97 → hkpc, server: 231103level3.unclemanco.com, port: 20029, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 98 → hkpc, server: rk2.izoizoizo.top, port: 40460, type: ss, cipher: chacha20-ietf-poly1305, password: a96ac14b-fd01-4a4c-b8fa-445257488fd4, udp: true}
   - {name: 🇨🇳 TW 1 → hkpc, server: c11.twtc.dynu.net, port: 13989, type: trojan, password: f7def183-ec24-4b77-86ee-7b8a2ba8e351, sni: c11.twtc.dynu.net, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 10 → hkpc, server: b12.ntbq.dynu.net, port: 9755, type: trojan, password: bc22f8b6-a366-4c09-812f-64da5a6a15b1, sni: b12.ntbq.dynu.net, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 11 → hkpc, server: c11.twtc.dynu.net, port: 13989, type: trojan, password: bc22f8b6-a366-4c09-812f-64da5a6a15b1, sni: c11.twtc.dynu.net, skip-cert-verify: true, udp: true}
@@ -501,12 +503,11 @@ proxies:
   - {name: 🇯🇵 JP 8 → hkpc, server: 185.172.113.182, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
   - {name: 🇯🇵 JP 9 → hkpc, server: 154.47.20.240, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇰🇷 KR 1 → hkpc, server: 211.201.169.70, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇰🇷 KR 2 → hkpc, server: ahcm.dyqufx.com, port: 44507, type: ss, cipher: chacha20-ietf-poly1305, password: 86e3471b-0b08-40b5-a297-2a54632757b9, udp: true}
-  - {name: 🇰🇷 KR 3 → hkpc, server: kr.pxiz.site, port: 28902, type: vmess, uuid: 2da64de4-54d0-4611-ab16-3401a8d16f0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇰🇷 KR 4 → hkpc, server: p234.panda004.net, port: 43396, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇰🇷 KR 5 → hkpc, server: kr.yydsii.com, port: 42752, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.yydsii.com}}, udp: true}
-  - {name: 🇰🇷 KR 6 → hkpc, server: p110.panda001.net, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇰🇷 KR 7 → hkpc, server: p231.panda004.net, port: 4375, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇰🇷 KR 2 → hkpc, server: kr.pxiz.site, port: 28902, type: vmess, uuid: 2da64de4-54d0-4611-ab16-3401a8d16f0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
+  - {name: 🇰🇷 KR 3 → hkpc, server: p234.panda004.net, port: 43396, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇰🇷 KR 4 → hkpc, server: kr.yydsii.com, port: 42752, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr.yydsii.com}}, udp: true}
+  - {name: 🇰🇷 KR 5 → hkpc, server: p110.panda001.net, port: 54345, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇰🇷 KR 6 → hkpc, server: p231.panda004.net, port: 4375, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇳🇱 NL 1 → hkpc, server: 188.114.98.0, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: odelia.autos}}, udp: true}
   - {name: 🇳🇱 NL 10 → hkpc, server: 188.114.99.0, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
   - {name: 🇳🇱 NL 11 → hkpc, server: 156.225.67.250, port: 41000, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/153428133302, headers: {Host: www.74636847.xyz}}, udp: true}
@@ -539,22 +540,22 @@ proxies:
   - {name: 🇸🇬 SG 8 → hkpc, server: 54.251.168.143, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇸🇬 SG 9 → hkpc, server: 103.172.116.103, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
   - {name: 🇺🇸 US 1 → hkpc, server: 205.134.180.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9Bvkw5aupNy8, udp: true}
-  - {name: 🇺🇸 US 10 → hkpc, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
-  - {name: 🇺🇸 US 11 → hkpc, server: 66.42.84.121, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-002797.kailib.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 12 → hkpc, server: us-01.cococloud.online, port: 2082, type: vmess, uuid: 23337bcf-ea22-4efe-a0bc-8be84706c8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-01.cococloud.online}}, udp: true}
-  - {name: 🇺🇸 US 13 → hkpc, server: 107.175.37.186, port: 80, type: vmess, uuid: dccb5580-de8d-4aca-a9a5-f986da33faa6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 14 → hkpc, server: odelia.autos, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: odelia.autos}}, udp: true}
+  - {name: 🇺🇸 US 10 → hkpc, server: 47.76.185.99, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: "", host: ""}, udp: true}
+  - {name: 🇺🇸 US 11 → hkpc, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
+  - {name: 🇺🇸 US 12 → hkpc, server: de-b.funhub.cc, port: 8443, type: vmess, uuid: b33155f0-7429-4f1c-97c4-a9ba24a3b1cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de-b.funhub.cc}}, udp: true}
+  - {name: 🇺🇸 US 13 → hkpc, server: 66.42.84.121, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-002797.kailib.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 14 → hkpc, server: 107.175.37.186, port: 80, type: vmess, uuid: dccb5580-de8d-4aca-a9a5-f986da33faa6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 US 15 → hkpc, server: 165.1.79.252, port: 19344, type: vmess, uuid: ac9dd407-d053-4c67-e44e-31d6a5833ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: soe.cheeshon.cyou}}, udp: true}
-  - {name: 🇺🇸 US 16 → hkpc, server: ming2.kiwireich.com, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ming2.kiwireich.com}}, udp: true}
-  - {name: 🇺🇸 US 17 → hkpc, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}, udp: true}
-  - {name: 🇺🇸 US 18 → hkpc, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
-  - {name: 🇺🇸 US 19 → hkpc, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
+  - {name: 🇺🇸 US 16 → hkpc, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}, udp: true}
+  - {name: 🇺🇸 US 17 → hkpc, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
+  - {name: 🇺🇸 US 18 → hkpc, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
+  - {name: 🇺🇸 US 19 → hkpc, server: 205.134.180.145, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hgLCgfLRgB6d, udp: true}
   - {name: 🇺🇸 US 2 → hkpc, server: 38.68.134.9, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇺🇸 US 20 → hkpc, server: 205.134.180.145, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hgLCgfLRgB6d, udp: true}
-  - {name: 🇺🇸 US 21 → hkpc, server: 45.76.228.197, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-003263.kailib.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 22 → hkpc, server: 172.67.220.64, port: 443, type: vmess, uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.31000oooowe2.bf}}, udp: true}
-  - {name: 🇺🇸 US 23 → hkpc, server: 38.14.107.226, port: 38100, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.23179753.xyz}}, udp: true}
-  - {name: 🇺🇸 US 24 → hkpc, server: 172.67.131.150, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oliv.beauty}}, udp: true}
+  - {name: 🇺🇸 US 20 → hkpc, server: 45.76.228.197, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-003263.kailib.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 21 → hkpc, server: 172.67.220.64, port: 443, type: vmess, uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.31000oooowe2.bf}}, udp: true}
+  - {name: 🇺🇸 US 22 → hkpc, server: 38.14.107.226, port: 38100, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.23179753.xyz}}, udp: true}
+  - {name: 🇺🇸 US 23 → hkpc, server: 172.67.131.150, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oliv.beauty}}, udp: true}
+  - {name: 🇺🇸 US 24 → hkpc, server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
   - {name: 🇺🇸 US 25 → hkpc, server: 172.67.179.151, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kittiy.sbs}}, udp: true}
   - {name: 🇺🇸 US 26 → hkpc, server: 34.220.129.196, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇺🇸 US 27 → hkpc, server: 167.88.61.175, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
@@ -565,17 +566,17 @@ proxies:
   - {name: 🇺🇸 US 31 → hkpc, server: irene.lat, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: irene.lat}}, udp: true}
   - {name: 🇺🇸 US 32 → hkpc, server: 205.134.180.151, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2, udp: true}
   - {name: 🇺🇸 US 33 → hkpc, server: 38.14.107.229, port: 38100, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.23179753.xyz}}, udp: true}
-  - {name: 🇺🇸 US 34 → hkpc, server: cloudflare.cfgo.cc, port: 80, type: vmess, uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: wap.hostmjj.com}}, udp: true}
-  - {name: 🇺🇸 US 35 → hkpc, server: by.funhub.cc, port: 8443, type: vmess, uuid: b33155f0-7429-4f1c-97c4-a9ba24a3b1cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: by.funhub.cc}}, udp: true}
-  - {name: 🇺🇸 US 36 → hkpc, server: cf.openxai.link, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
-  - {name: 🇺🇸 US 37 → hkpc, server: go.cococloud.online, port: 2082, type: vmess, uuid: 23337bcf-ea22-4efe-a0bc-8be84706c8bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-01.cococloud.online}}, udp: true}
-  - {name: 🇺🇸 US 38 → hkpc, server: waynn.makeup, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: waynn.makeup}}, udp: true}
-  - {name: 🇺🇸 US 39 → hkpc, server: beecomf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇺🇸 US 34 → hkpc, server: by.funhub.cc, port: 8443, type: vmess, uuid: b33155f0-7429-4f1c-97c4-a9ba24a3b1cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: by.funhub.cc}}, udp: true}
+  - {name: 🇺🇸 US 35 → hkpc, server: cf.openxai.link, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
+  - {name: 🇺🇸 US 36 → hkpc, server: waynn.makeup, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: waynn.makeup}}, udp: true}
+  - {name: 🇺🇸 US 37 → hkpc, server: beecomf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇺🇸 US 38 → hkpc, server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
+  - {name: 🇺🇸 US 39 → hkpc, server: 172.67.132.15, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ming2.kiwireich.com}}, udp: true}
   - {name: 🇺🇸 US 4 → hkpc, server: us1.n305.dynu.net, port: 16389, type: trojan, password: bc22f8b6-a366-4c09-812f-64da5a6a15b1, sni: us1.n305.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 40 → hkpc, server: 172.67.132.15, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ming2.kiwireich.com}}, udp: true}
-  - {name: 🇺🇸 US 41 → hkpc, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
-  - {name: 🇺🇸 US 42 → hkpc, server: 172.67.142.191, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: edeen.makeup}}, udp: true}
-  - {name: 🇺🇸 US 43 → hkpc, server: 172.67.183.110, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: waynn.makeup}}, udp: true}
+  - {name: 🇺🇸 US 40 → hkpc, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: 🇺🇸 US 41 → hkpc, server: 172.67.142.191, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: edeen.makeup}}, udp: true}
+  - {name: 🇺🇸 US 42 → hkpc, server: 172.67.183.110, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: waynn.makeup}}, udp: true}
+  - {name: 🇺🇸 US 43 → hkpc, server: kittiy.sbs, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kittiy.sbs}}, udp: true}
   - {name: 🇺🇸 US 44 → hkpc, server: 38.14.120.227, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/153428133302, headers: {Host: www.65825524.xyz}}, udp: true}
   - {name: 🇺🇸 US 45 → hkpc, server: 172.67.229.35, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
   - {name: 🇺🇸 US 46 → hkpc, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
@@ -585,34 +586,30 @@ proxies:
   - {name: 🇺🇸 US 5 → hkpc, server: onea.flha.ru, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
   - {name: 🇺🇸 US 50 → hkpc, server: 172.67.229.33, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
   - {name: 🇺🇸 US 51 → hkpc, server: 172.67.229.13, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
-  - {name: 🇺🇸 US 52 → hkpc, server: onea.flha.ru, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 🇺🇸 US 53 → hkpc, server: hkd1.quickerlink.xyz, port: 443, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /h6jr23x9h3lqiitg, headers: {Host: hkd1.quickerlink.xyz}}, udp: true}
-  - {name: 🇺🇸 US 54 → hkpc, server: alvvin.click, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: alvvin.click}}, udp: true}
-  - {name: 🇺🇸 US 55 → hkpc, server: s1c.v2.v001sss.xyz, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
-  - {name: 🇺🇸 US 56 → hkpc, server: de-01.cloudlion.me, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de-01.cloudlion.me}}, udp: true}
-  - {name: 🇺🇸 US 57 → hkpc, server: 172.67.229.34, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
-  - {name: 🇺🇸 US 58 → hkpc, server: 172.67.229.25, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
-  - {name: 🇺🇸 US 59 → hkpc, server: 172.67.169.158, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr-01.cloudlion.me}}, udp: true}
-  - {name: 🇺🇸 US 6 → hkpc, server: kz-full.privateip.net, port: 443, type: trojan, password: 62011b3d-2706-4a97-98b7-9986003c5fe0, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 60 → hkpc, server: 80.92.205.112, port: 443, type: vmess, uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 US 61 → hkpc, server: cf.openxai.link, port: 8080, type: vmess, uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu3.openxai.link}}, udp: true}
-  - {name: 🇺🇸 US 62 → hkpc, server: 207.246.68.67, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-003338.kailib.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 63 → hkpc, server: 172.67.198.13, port: 8443, type: vmess, uuid: b33155f0-7429-4f1c-97c4-a9ba24a3b1cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-b.funhub.cc}}, udp: true}
-  - {name: 🇺🇸 US 64 → hkpc, server: 172.67.201.200, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: maggiy.shop}}, udp: true}
-  - {name: 🇺🇸 US 65 → hkpc, server: 172.67.170.103, port: 2095, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yaghoob55freenodes.repaco69437403.workers.dev}}, udp: true}
-  - {name: 🇺🇸 US 66 → hkpc, server: 172.67.143.192, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
-  - {name: 🇺🇸 US 67 → hkpc, server: 172.67.214.33, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 🇺🇸 US 68 → hkpc, server: ophelia.mom, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
-  - {name: 🇺🇸 US 69 → hkpc, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 🇺🇸 US 7 → hkpc, server: 172.67.229.38, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
-  - {name: 🇺🇸 US 70 → hkpc, server: 172.67.215.202, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: octavi.cfd}}, udp: true}
-  - {name: 🇺🇸 US 71 → hkpc, server: 47.76.185.99, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
-  - {name: 🇺🇸 US 72 → hkpc, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
-  - {name: 🇺🇸 US 73 → hkpc, server: 172.67.164.184, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: alvvin.click}}, udp: true}
-  - {name: 🇺🇸 US 74 → hkpc, server: 172.67.207.114, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
-  - {name: 🇺🇸 US 75 → hkpc, server: cf.openxai.link, port: 8080, type: vmess, uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
-  - {name: 🇺🇸 US 8 → hkpc, server: 172.67.136.12, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
-  - {name: 🇺🇸 US 9 → hkpc, server: 47.76.185.99, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: "", host: ""}, udp: true}
+  - {name: 🇺🇸 US 52 → hkpc, server: 172.67.229.34, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
+  - {name: 🇺🇸 US 53 → hkpc, server: 172.67.229.25, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
+  - {name: 🇺🇸 US 54 → hkpc, server: 172.67.169.158, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr-01.cloudlion.me}}, udp: true}
+  - {name: 🇺🇸 US 55 → hkpc, server: 80.92.205.112, port: 443, type: vmess, uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 56 → hkpc, server: hk-b.funhub.cc, port: 8443, type: vmess, uuid: b33155f0-7429-4f1c-97c4-a9ba24a3b1cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-b.funhub.cc}}, udp: true}
+  - {name: 🇺🇸 US 57 → hkpc, server: cf.openxai.link, port: 8080, type: vmess, uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu3.openxai.link}}, udp: true}
+  - {name: 🇺🇸 US 58 → hkpc, server: 207.246.68.67, port: 443, type: trojan, password: wkmY1R4EcP, sni: z-v2-003338.kailib.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 59 → hkpc, server: 172.67.198.13, port: 8443, type: vmess, uuid: b33155f0-7429-4f1c-97c4-a9ba24a3b1cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-b.funhub.cc}}, udp: true}
+  - {name: 🇺🇸 US 6 → hkpc, server: kellie.makeup, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kellie.makeup}}, udp: true}
+  - {name: 🇺🇸 US 60 → hkpc, server: 172.67.201.200, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: maggiy.shop}}, udp: true}
+  - {name: 🇺🇸 US 61 → hkpc, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 US 62 → hkpc, server: 172.67.170.103, port: 2095, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yaghoob55freenodes.repaco69437403.workers.dev}}, udp: true}
+  - {name: 🇺🇸 US 63 → hkpc, server: 172.67.143.192, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
+  - {name: 🇺🇸 US 64 → hkpc, server: 172.67.214.33, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 🇺🇸 US 65 → hkpc, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 US 66 → hkpc, server: 172.67.215.202, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: octavi.cfd}}, udp: true}
+  - {name: 🇺🇸 US 67 → hkpc, server: 47.76.185.99, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: obfs, plugin-opts: {mode: http, host: ""}, udp: true}
+  - {name: 🇺🇸 US 68 → hkpc, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
+  - {name: 🇺🇸 US 69 → hkpc, server: 172.67.164.184, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: alvvin.click}}, udp: true}
+  - {name: 🇺🇸 US 7 → hkpc, server: kz-full.privateip.net, port: 443, type: trojan, password: 62011b3d-2706-4a97-98b7-9986003c5fe0, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 70 → hkpc, server: 172.67.207.114, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
+  - {name: 🇺🇸 US 71 → hkpc, server: cf.openxai.link, port: 8080, type: vmess, uuid: c18beb85-c67b-46ed-b8cc-4cbfeae5f194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
+  - {name: 🇺🇸 US 8 → hkpc, server: 172.67.229.38, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}, udp: true}
+  - {name: 🇺🇸 US 9 → hkpc, server: 172.67.136.12, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -642,6 +639,7 @@ proxy-groups:
       - CH 1 → hkpc
       - CL 1 → hkpc
       - CO 1 → hkpc
+      - CR 1 → hkpc
       - CY 1 → hkpc
       - EC 1 → hkpc
       - FI 1 → hkpc
@@ -686,15 +684,14 @@ proxy-groups:
       - 🇨🇦 CA 9 → hkpc
       - 🇨🇳 CN 1 → hkpc
       - 🇨🇳 CN 10 → hkpc
-      - 🇨🇳 CN 100 → hkpc
       - 🇨🇳 CN 101 → hkpc
       - 🇨🇳 CN 102 → hkpc
       - 🇨🇳 CN 103 → hkpc
-      - 🇨🇳 CN 105 → hkpc
-      - 🇨🇳 CN 107 → hkpc
+      - 🇨🇳 CN 104 → hkpc
+      - 🇨🇳 CN 106 → hkpc
       - 🇨🇳 CN 108 → hkpc
+      - 🇨🇳 CN 109 → hkpc
       - 🇨🇳 CN 11 → hkpc
-      - 🇨🇳 CN 110 → hkpc
       - 🇨🇳 CN 111 → hkpc
       - 🇨🇳 CN 112 → hkpc
       - 🇨🇳 CN 113 → hkpc
@@ -707,7 +704,7 @@ proxy-groups:
       - 🇨🇳 CN 12 → hkpc
       - 🇨🇳 CN 120 → hkpc
       - 🇨🇳 CN 121 → hkpc
-      - 🇨🇳 CN 123 → hkpc
+      - 🇨🇳 CN 122 → hkpc
       - 🇨🇳 CN 124 → hkpc
       - 🇨🇳 CN 125 → hkpc
       - 🇨🇳 CN 126 → hkpc
@@ -715,12 +712,12 @@ proxy-groups:
       - 🇨🇳 CN 128 → hkpc
       - 🇨🇳 CN 129 → hkpc
       - 🇨🇳 CN 13 → hkpc
-      - 🇨🇳 CN 135 → hkpc
+      - 🇨🇳 CN 130 → hkpc
       - 🇨🇳 CN 136 → hkpc
       - 🇨🇳 CN 137 → hkpc
-      - 🇨🇳 CN 139 → hkpc
+      - 🇨🇳 CN 138 → hkpc
       - 🇨🇳 CN 14 → hkpc
-      - 🇨🇳 CN 141 → hkpc
+      - 🇨🇳 CN 140 → hkpc
       - 🇨🇳 CN 142 → hkpc
       - 🇨🇳 CN 143 → hkpc
       - 🇨🇳 CN 144 → hkpc
@@ -733,62 +730,63 @@ proxy-groups:
       - 🇨🇳 CN 150 → hkpc
       - 🇨🇳 CN 151 → hkpc
       - 🇨🇳 CN 152 → hkpc
-      - 🇨🇳 CN 154 → hkpc
+      - 🇨🇳 CN 153 → hkpc
       - 🇨🇳 CN 155 → hkpc
       - 🇨🇳 CN 156 → hkpc
       - 🇨🇳 CN 157 → hkpc
-      - 🇨🇳 CN 159 → hkpc
+      - 🇨🇳 CN 158 → hkpc
       - 🇨🇳 CN 160 → hkpc
-      - 🇨🇳 CN 162 → hkpc
+      - 🇨🇳 CN 161 → hkpc
       - 🇨🇳 CN 163 → hkpc
       - 🇨🇳 CN 164 → hkpc
-      - 🇨🇳 CN 168 → hkpc
+      - 🇨🇳 CN 165 → hkpc
       - 🇨🇳 CN 169 → hkpc
       - 🇨🇳 CN 17 → hkpc
       - 🇨🇳 CN 170 → hkpc
-      - 🇨🇳 CN 172 → hkpc
+      - 🇨🇳 CN 171 → hkpc
       - 🇨🇳 CN 173 → hkpc
-      - 🇨🇳 CN 175 → hkpc
-      - 🇨🇳 CN 177 → hkpc
-      - 🇨🇳 CN 182 → hkpc
-      - 🇨🇳 CN 186 → hkpc
-      - 🇨🇳 CN 188 → hkpc
+      - 🇨🇳 CN 174 → hkpc
+      - 🇨🇳 CN 176 → hkpc
+      - 🇨🇳 CN 178 → hkpc
+      - 🇨🇳 CN 183 → hkpc
+      - 🇨🇳 CN 187 → hkpc
       - 🇨🇳 CN 189 → hkpc
       - 🇨🇳 CN 19 → hkpc
       - 🇨🇳 CN 190 → hkpc
       - 🇨🇳 CN 191 → hkpc
-      - 🇨🇳 CN 193 → hkpc
+      - 🇨🇳 CN 192 → hkpc
       - 🇨🇳 CN 194 → hkpc
       - 🇨🇳 CN 195 → hkpc
       - 🇨🇳 CN 196 → hkpc
       - 🇨🇳 CN 197 → hkpc
       - 🇨🇳 CN 198 → hkpc
+      - 🇨🇳 CN 199 → hkpc
       - 🇨🇳 CN 2 → hkpc
       - 🇨🇳 CN 20 → hkpc
-      - 🇨🇳 CN 200 → hkpc
       - 🇨🇳 CN 201 → hkpc
       - 🇨🇳 CN 202 → hkpc
       - 🇨🇳 CN 203 → hkpc
-      - 🇨🇳 CN 205 → hkpc
+      - 🇨🇳 CN 204 → hkpc
       - 🇨🇳 CN 206 → hkpc
       - 🇨🇳 CN 207 → hkpc
       - 🇨🇳 CN 208 → hkpc
       - 🇨🇳 CN 209 → hkpc
       - 🇨🇳 CN 210 → hkpc
+      - 🇨🇳 CN 211 → hkpc
       - 🇨🇳 CN 22 → hkpc
       - 🇨🇳 CN 24 → hkpc
       - 🇨🇳 CN 25 → hkpc
       - 🇨🇳 CN 27 → hkpc
       - 🇨🇳 CN 28 → hkpc
-      - 🇨🇳 CN 30 → hkpc
-      - 🇨🇳 CN 32 → hkpc
+      - 🇨🇳 CN 29 → hkpc
+      - 🇨🇳 CN 31 → hkpc
       - 🇨🇳 CN 33 → hkpc
       - 🇨🇳 CN 34 → hkpc
       - 🇨🇳 CN 35 → hkpc
       - 🇨🇳 CN 36 → hkpc
-      - 🇨🇳 CN 38 → hkpc
+      - 🇨🇳 CN 37 → hkpc
       - 🇨🇳 CN 39 → hkpc
-      - 🇨🇳 CN 41 → hkpc
+      - 🇨🇳 CN 40 → hkpc
       - 🇨🇳 CN 42 → hkpc
       - 🇨🇳 CN 43 → hkpc
       - 🇨🇳 CN 44 → hkpc
@@ -803,23 +801,23 @@ proxy-groups:
       - 🇨🇳 CN 52 → hkpc
       - 🇨🇳 CN 53 → hkpc
       - 🇨🇳 CN 54 → hkpc
-      - 🇨🇳 CN 56 → hkpc
+      - 🇨🇳 CN 55 → hkpc
       - 🇨🇳 CN 57 → hkpc
       - 🇨🇳 CN 58 → hkpc
       - 🇨🇳 CN 59 → hkpc
       - 🇨🇳 CN 6 → hkpc
       - 🇨🇳 CN 60 → hkpc
-      - 🇨🇳 CN 62 → hkpc
+      - 🇨🇳 CN 61 → hkpc
       - 🇨🇳 CN 63 → hkpc
       - 🇨🇳 CN 64 → hkpc
       - 🇨🇳 CN 65 → hkpc
-      - 🇨🇳 CN 68 → hkpc
+      - 🇨🇳 CN 66 → hkpc
+      - 🇨🇳 CN 69 → hkpc
       - 🇨🇳 CN 7 → hkpc
-      - 🇨🇳 CN 71 → hkpc
-      - 🇨🇳 CN 73 → hkpc
+      - 🇨🇳 CN 72 → hkpc
       - 🇨🇳 CN 74 → hkpc
-      - 🇨🇳 CN 76 → hkpc
-      - 🇨🇳 CN 79 → hkpc
+      - 🇨🇳 CN 75 → hkpc
+      - 🇨🇳 CN 77 → hkpc
       - 🇨🇳 CN 8 → hkpc
       - 🇨🇳 CN 80 → hkpc
       - 🇨🇳 CN 81 → hkpc
@@ -827,16 +825,17 @@ proxy-groups:
       - 🇨🇳 CN 83 → hkpc
       - 🇨🇳 CN 84 → hkpc
       - 🇨🇳 CN 85 → hkpc
-      - 🇨🇳 CN 87 → hkpc
+      - 🇨🇳 CN 86 → hkpc
       - 🇨🇳 CN 88 → hkpc
       - 🇨🇳 CN 89 → hkpc
       - 🇨🇳 CN 9 → hkpc
       - 🇨🇳 CN 90 → hkpc
-      - 🇨🇳 CN 92 → hkpc
-      - 🇨🇳 CN 94 → hkpc
+      - 🇨🇳 CN 91 → hkpc
+      - 🇨🇳 CN 93 → hkpc
       - 🇨🇳 CN 95 → hkpc
       - 🇨🇳 CN 96 → hkpc
       - 🇨🇳 CN 97 → hkpc
+      - 🇨🇳 CN 98 → hkpc
       - 🇨🇳 TW 1 → hkpc
       - 🇨🇳 TW 10 → hkpc
       - 🇨🇳 TW 11 → hkpc
@@ -940,7 +939,6 @@ proxy-groups:
       - 🇰🇷 KR 4 → hkpc
       - 🇰🇷 KR 5 → hkpc
       - 🇰🇷 KR 6 → hkpc
-      - 🇰🇷 KR 7 → hkpc
       - 🇳🇱 NL 1 → hkpc
       - 🇳🇱 NL 10 → hkpc
       - 🇳🇱 NL 11 → hkpc
@@ -1041,10 +1039,6 @@ proxy-groups:
       - 🇺🇸 US 7 → hkpc
       - 🇺🇸 US 70 → hkpc
       - 🇺🇸 US 71 → hkpc
-      - 🇺🇸 US 72 → hkpc
-      - 🇺🇸 US 73 → hkpc
-      - 🇺🇸 US 74 → hkpc
-      - 🇺🇸 US 75 → hkpc
       - 🇺🇸 US 8 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 💡 自动选择
@@ -1065,6 +1059,7 @@ proxy-groups:
       - CH 1 → hkpc
       - CL 1 → hkpc
       - CO 1 → hkpc
+      - CR 1 → hkpc
       - CY 1 → hkpc
       - EC 1 → hkpc
       - FI 1 → hkpc
@@ -1109,15 +1104,14 @@ proxy-groups:
       - 🇨🇦 CA 9 → hkpc
       - 🇨🇳 CN 1 → hkpc
       - 🇨🇳 CN 10 → hkpc
-      - 🇨🇳 CN 100 → hkpc
       - 🇨🇳 CN 101 → hkpc
       - 🇨🇳 CN 102 → hkpc
       - 🇨🇳 CN 103 → hkpc
-      - 🇨🇳 CN 105 → hkpc
-      - 🇨🇳 CN 107 → hkpc
+      - 🇨🇳 CN 104 → hkpc
+      - 🇨🇳 CN 106 → hkpc
       - 🇨🇳 CN 108 → hkpc
+      - 🇨🇳 CN 109 → hkpc
       - 🇨🇳 CN 11 → hkpc
-      - 🇨🇳 CN 110 → hkpc
       - 🇨🇳 CN 111 → hkpc
       - 🇨🇳 CN 112 → hkpc
       - 🇨🇳 CN 113 → hkpc
@@ -1130,7 +1124,7 @@ proxy-groups:
       - 🇨🇳 CN 12 → hkpc
       - 🇨🇳 CN 120 → hkpc
       - 🇨🇳 CN 121 → hkpc
-      - 🇨🇳 CN 123 → hkpc
+      - 🇨🇳 CN 122 → hkpc
       - 🇨🇳 CN 124 → hkpc
       - 🇨🇳 CN 125 → hkpc
       - 🇨🇳 CN 126 → hkpc
@@ -1138,12 +1132,12 @@ proxy-groups:
       - 🇨🇳 CN 128 → hkpc
       - 🇨🇳 CN 129 → hkpc
       - 🇨🇳 CN 13 → hkpc
-      - 🇨🇳 CN 135 → hkpc
+      - 🇨🇳 CN 130 → hkpc
       - 🇨🇳 CN 136 → hkpc
       - 🇨🇳 CN 137 → hkpc
-      - 🇨🇳 CN 139 → hkpc
+      - 🇨🇳 CN 138 → hkpc
       - 🇨🇳 CN 14 → hkpc
-      - 🇨🇳 CN 141 → hkpc
+      - 🇨🇳 CN 140 → hkpc
       - 🇨🇳 CN 142 → hkpc
       - 🇨🇳 CN 143 → hkpc
       - 🇨🇳 CN 144 → hkpc
@@ -1156,62 +1150,63 @@ proxy-groups:
       - 🇨🇳 CN 150 → hkpc
       - 🇨🇳 CN 151 → hkpc
       - 🇨🇳 CN 152 → hkpc
-      - 🇨🇳 CN 154 → hkpc
+      - 🇨🇳 CN 153 → hkpc
       - 🇨🇳 CN 155 → hkpc
       - 🇨🇳 CN 156 → hkpc
       - 🇨🇳 CN 157 → hkpc
-      - 🇨🇳 CN 159 → hkpc
+      - 🇨🇳 CN 158 → hkpc
       - 🇨🇳 CN 160 → hkpc
-      - 🇨🇳 CN 162 → hkpc
+      - 🇨🇳 CN 161 → hkpc
       - 🇨🇳 CN 163 → hkpc
       - 🇨🇳 CN 164 → hkpc
-      - 🇨🇳 CN 168 → hkpc
+      - 🇨🇳 CN 165 → hkpc
       - 🇨🇳 CN 169 → hkpc
       - 🇨🇳 CN 17 → hkpc
       - 🇨🇳 CN 170 → hkpc
-      - 🇨🇳 CN 172 → hkpc
+      - 🇨🇳 CN 171 → hkpc
       - 🇨🇳 CN 173 → hkpc
-      - 🇨🇳 CN 175 → hkpc
-      - 🇨🇳 CN 177 → hkpc
-      - 🇨🇳 CN 182 → hkpc
-      - 🇨🇳 CN 186 → hkpc
-      - 🇨🇳 CN 188 → hkpc
+      - 🇨🇳 CN 174 → hkpc
+      - 🇨🇳 CN 176 → hkpc
+      - 🇨🇳 CN 178 → hkpc
+      - 🇨🇳 CN 183 → hkpc
+      - 🇨🇳 CN 187 → hkpc
       - 🇨🇳 CN 189 → hkpc
       - 🇨🇳 CN 19 → hkpc
       - 🇨🇳 CN 190 → hkpc
       - 🇨🇳 CN 191 → hkpc
-      - 🇨🇳 CN 193 → hkpc
+      - 🇨🇳 CN 192 → hkpc
       - 🇨🇳 CN 194 → hkpc
       - 🇨🇳 CN 195 → hkpc
       - 🇨🇳 CN 196 → hkpc
       - 🇨🇳 CN 197 → hkpc
       - 🇨🇳 CN 198 → hkpc
+      - 🇨🇳 CN 199 → hkpc
       - 🇨🇳 CN 2 → hkpc
       - 🇨🇳 CN 20 → hkpc
-      - 🇨🇳 CN 200 → hkpc
       - 🇨🇳 CN 201 → hkpc
       - 🇨🇳 CN 202 → hkpc
       - 🇨🇳 CN 203 → hkpc
-      - 🇨🇳 CN 205 → hkpc
+      - 🇨🇳 CN 204 → hkpc
       - 🇨🇳 CN 206 → hkpc
       - 🇨🇳 CN 207 → hkpc
       - 🇨🇳 CN 208 → hkpc
       - 🇨🇳 CN 209 → hkpc
       - 🇨🇳 CN 210 → hkpc
+      - 🇨🇳 CN 211 → hkpc
       - 🇨🇳 CN 22 → hkpc
       - 🇨🇳 CN 24 → hkpc
       - 🇨🇳 CN 25 → hkpc
       - 🇨🇳 CN 27 → hkpc
       - 🇨🇳 CN 28 → hkpc
-      - 🇨🇳 CN 30 → hkpc
-      - 🇨🇳 CN 32 → hkpc
+      - 🇨🇳 CN 29 → hkpc
+      - 🇨🇳 CN 31 → hkpc
       - 🇨🇳 CN 33 → hkpc
       - 🇨🇳 CN 34 → hkpc
       - 🇨🇳 CN 35 → hkpc
       - 🇨🇳 CN 36 → hkpc
-      - 🇨🇳 CN 38 → hkpc
+      - 🇨🇳 CN 37 → hkpc
       - 🇨🇳 CN 39 → hkpc
-      - 🇨🇳 CN 41 → hkpc
+      - 🇨🇳 CN 40 → hkpc
       - 🇨🇳 CN 42 → hkpc
       - 🇨🇳 CN 43 → hkpc
       - 🇨🇳 CN 44 → hkpc
@@ -1226,23 +1221,23 @@ proxy-groups:
       - 🇨🇳 CN 52 → hkpc
       - 🇨🇳 CN 53 → hkpc
       - 🇨🇳 CN 54 → hkpc
-      - 🇨🇳 CN 56 → hkpc
+      - 🇨🇳 CN 55 → hkpc
       - 🇨🇳 CN 57 → hkpc
       - 🇨🇳 CN 58 → hkpc
       - 🇨🇳 CN 59 → hkpc
       - 🇨🇳 CN 6 → hkpc
       - 🇨🇳 CN 60 → hkpc
-      - 🇨🇳 CN 62 → hkpc
+      - 🇨🇳 CN 61 → hkpc
       - 🇨🇳 CN 63 → hkpc
       - 🇨🇳 CN 64 → hkpc
       - 🇨🇳 CN 65 → hkpc
-      - 🇨🇳 CN 68 → hkpc
+      - 🇨🇳 CN 66 → hkpc
+      - 🇨🇳 CN 69 → hkpc
       - 🇨🇳 CN 7 → hkpc
-      - 🇨🇳 CN 71 → hkpc
-      - 🇨🇳 CN 73 → hkpc
+      - 🇨🇳 CN 72 → hkpc
       - 🇨🇳 CN 74 → hkpc
-      - 🇨🇳 CN 76 → hkpc
-      - 🇨🇳 CN 79 → hkpc
+      - 🇨🇳 CN 75 → hkpc
+      - 🇨🇳 CN 77 → hkpc
       - 🇨🇳 CN 8 → hkpc
       - 🇨🇳 CN 80 → hkpc
       - 🇨🇳 CN 81 → hkpc
@@ -1250,16 +1245,17 @@ proxy-groups:
       - 🇨🇳 CN 83 → hkpc
       - 🇨🇳 CN 84 → hkpc
       - 🇨🇳 CN 85 → hkpc
-      - 🇨🇳 CN 87 → hkpc
+      - 🇨🇳 CN 86 → hkpc
       - 🇨🇳 CN 88 → hkpc
       - 🇨🇳 CN 89 → hkpc
       - 🇨🇳 CN 9 → hkpc
       - 🇨🇳 CN 90 → hkpc
-      - 🇨🇳 CN 92 → hkpc
-      - 🇨🇳 CN 94 → hkpc
+      - 🇨🇳 CN 91 → hkpc
+      - 🇨🇳 CN 93 → hkpc
       - 🇨🇳 CN 95 → hkpc
       - 🇨🇳 CN 96 → hkpc
       - 🇨🇳 CN 97 → hkpc
+      - 🇨🇳 CN 98 → hkpc
       - 🇨🇳 TW 1 → hkpc
       - 🇨🇳 TW 10 → hkpc
       - 🇨🇳 TW 11 → hkpc
@@ -1363,7 +1359,6 @@ proxy-groups:
       - 🇰🇷 KR 4 → hkpc
       - 🇰🇷 KR 5 → hkpc
       - 🇰🇷 KR 6 → hkpc
-      - 🇰🇷 KR 7 → hkpc
       - 🇳🇱 NL 1 → hkpc
       - 🇳🇱 NL 10 → hkpc
       - 🇳🇱 NL 11 → hkpc
@@ -1464,10 +1459,6 @@ proxy-groups:
       - 🇺🇸 US 7 → hkpc
       - 🇺🇸 US 70 → hkpc
       - 🇺🇸 US 71 → hkpc
-      - 🇺🇸 US 72 → hkpc
-      - 🇺🇸 US 73 → hkpc
-      - 🇺🇸 US 74 → hkpc
-      - 🇺🇸 US 75 → hkpc
       - 🇺🇸 US 8 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 🇭🇰 香港节点
@@ -1597,10 +1588,6 @@ proxy-groups:
       - 🇺🇸 US 7 → hkpc
       - 🇺🇸 US 70 → hkpc
       - 🇺🇸 US 71 → hkpc
-      - 🇺🇸 US 72 → hkpc
-      - 🇺🇸 US 73 → hkpc
-      - 🇺🇸 US 74 → hkpc
-      - 🇺🇸 US 75 → hkpc
       - 🇺🇸 US 8 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 🇹🇼 台湾节点
@@ -1653,7 +1640,6 @@ proxy-groups:
       - 🇰🇷 KR 4 → hkpc
       - 🇰🇷 KR 5 → hkpc
       - 🇰🇷 KR 6 → hkpc
-      - 🇰🇷 KR 7 → hkpc
   - name: 🌍 其他地区
     type: select
     proxies:
@@ -1669,6 +1655,7 @@ proxy-groups:
       - CH 1 → hkpc
       - CL 1 → hkpc
       - CO 1 → hkpc
+      - CR 1 → hkpc
       - CY 1 → hkpc
       - EC 1 → hkpc
       - FI 1 → hkpc
@@ -1713,15 +1700,14 @@ proxy-groups:
       - 🇨🇦 CA 9 → hkpc
       - 🇨🇳 CN 1 → hkpc
       - 🇨🇳 CN 10 → hkpc
-      - 🇨🇳 CN 100 → hkpc
       - 🇨🇳 CN 101 → hkpc
       - 🇨🇳 CN 102 → hkpc
       - 🇨🇳 CN 103 → hkpc
-      - 🇨🇳 CN 105 → hkpc
-      - 🇨🇳 CN 107 → hkpc
+      - 🇨🇳 CN 104 → hkpc
+      - 🇨🇳 CN 106 → hkpc
       - 🇨🇳 CN 108 → hkpc
+      - 🇨🇳 CN 109 → hkpc
       - 🇨🇳 CN 11 → hkpc
-      - 🇨🇳 CN 110 → hkpc
       - 🇨🇳 CN 111 → hkpc
       - 🇨🇳 CN 112 → hkpc
       - 🇨🇳 CN 113 → hkpc
@@ -1734,7 +1720,7 @@ proxy-groups:
       - 🇨🇳 CN 12 → hkpc
       - 🇨🇳 CN 120 → hkpc
       - 🇨🇳 CN 121 → hkpc
-      - 🇨🇳 CN 123 → hkpc
+      - 🇨🇳 CN 122 → hkpc
       - 🇨🇳 CN 124 → hkpc
       - 🇨🇳 CN 125 → hkpc
       - 🇨🇳 CN 126 → hkpc
@@ -1742,12 +1728,12 @@ proxy-groups:
       - 🇨🇳 CN 128 → hkpc
       - 🇨🇳 CN 129 → hkpc
       - 🇨🇳 CN 13 → hkpc
-      - 🇨🇳 CN 135 → hkpc
+      - 🇨🇳 CN 130 → hkpc
       - 🇨🇳 CN 136 → hkpc
       - 🇨🇳 CN 137 → hkpc
-      - 🇨🇳 CN 139 → hkpc
+      - 🇨🇳 CN 138 → hkpc
       - 🇨🇳 CN 14 → hkpc
-      - 🇨🇳 CN 141 → hkpc
+      - 🇨🇳 CN 140 → hkpc
       - 🇨🇳 CN 142 → hkpc
       - 🇨🇳 CN 143 → hkpc
       - 🇨🇳 CN 144 → hkpc
@@ -1760,62 +1746,63 @@ proxy-groups:
       - 🇨🇳 CN 150 → hkpc
       - 🇨🇳 CN 151 → hkpc
       - 🇨🇳 CN 152 → hkpc
-      - 🇨🇳 CN 154 → hkpc
+      - 🇨🇳 CN 153 → hkpc
       - 🇨🇳 CN 155 → hkpc
       - 🇨🇳 CN 156 → hkpc
       - 🇨🇳 CN 157 → hkpc
-      - 🇨🇳 CN 159 → hkpc
+      - 🇨🇳 CN 158 → hkpc
       - 🇨🇳 CN 160 → hkpc
-      - 🇨🇳 CN 162 → hkpc
+      - 🇨🇳 CN 161 → hkpc
       - 🇨🇳 CN 163 → hkpc
       - 🇨🇳 CN 164 → hkpc
-      - 🇨🇳 CN 168 → hkpc
+      - 🇨🇳 CN 165 → hkpc
       - 🇨🇳 CN 169 → hkpc
       - 🇨🇳 CN 17 → hkpc
       - 🇨🇳 CN 170 → hkpc
-      - 🇨🇳 CN 172 → hkpc
+      - 🇨🇳 CN 171 → hkpc
       - 🇨🇳 CN 173 → hkpc
-      - 🇨🇳 CN 175 → hkpc
-      - 🇨🇳 CN 177 → hkpc
-      - 🇨🇳 CN 182 → hkpc
-      - 🇨🇳 CN 186 → hkpc
-      - 🇨🇳 CN 188 → hkpc
+      - 🇨🇳 CN 174 → hkpc
+      - 🇨🇳 CN 176 → hkpc
+      - 🇨🇳 CN 178 → hkpc
+      - 🇨🇳 CN 183 → hkpc
+      - 🇨🇳 CN 187 → hkpc
       - 🇨🇳 CN 189 → hkpc
       - 🇨🇳 CN 19 → hkpc
       - 🇨🇳 CN 190 → hkpc
       - 🇨🇳 CN 191 → hkpc
-      - 🇨🇳 CN 193 → hkpc
+      - 🇨🇳 CN 192 → hkpc
       - 🇨🇳 CN 194 → hkpc
       - 🇨🇳 CN 195 → hkpc
       - 🇨🇳 CN 196 → hkpc
       - 🇨🇳 CN 197 → hkpc
       - 🇨🇳 CN 198 → hkpc
+      - 🇨🇳 CN 199 → hkpc
       - 🇨🇳 CN 2 → hkpc
       - 🇨🇳 CN 20 → hkpc
-      - 🇨🇳 CN 200 → hkpc
       - 🇨🇳 CN 201 → hkpc
       - 🇨🇳 CN 202 → hkpc
       - 🇨🇳 CN 203 → hkpc
-      - 🇨🇳 CN 205 → hkpc
+      - 🇨🇳 CN 204 → hkpc
       - 🇨🇳 CN 206 → hkpc
       - 🇨🇳 CN 207 → hkpc
       - 🇨🇳 CN 208 → hkpc
       - 🇨🇳 CN 209 → hkpc
       - 🇨🇳 CN 210 → hkpc
+      - 🇨🇳 CN 211 → hkpc
       - 🇨🇳 CN 22 → hkpc
       - 🇨🇳 CN 24 → hkpc
       - 🇨🇳 CN 25 → hkpc
       - 🇨🇳 CN 27 → hkpc
       - 🇨🇳 CN 28 → hkpc
-      - 🇨🇳 CN 30 → hkpc
-      - 🇨🇳 CN 32 → hkpc
+      - 🇨🇳 CN 29 → hkpc
+      - 🇨🇳 CN 31 → hkpc
       - 🇨🇳 CN 33 → hkpc
       - 🇨🇳 CN 34 → hkpc
       - 🇨🇳 CN 35 → hkpc
       - 🇨🇳 CN 36 → hkpc
-      - 🇨🇳 CN 38 → hkpc
+      - 🇨🇳 CN 37 → hkpc
       - 🇨🇳 CN 39 → hkpc
-      - 🇨🇳 CN 41 → hkpc
+      - 🇨🇳 CN 40 → hkpc
       - 🇨🇳 CN 42 → hkpc
       - 🇨🇳 CN 43 → hkpc
       - 🇨🇳 CN 44 → hkpc
@@ -1830,23 +1817,23 @@ proxy-groups:
       - 🇨🇳 CN 52 → hkpc
       - 🇨🇳 CN 53 → hkpc
       - 🇨🇳 CN 54 → hkpc
-      - 🇨🇳 CN 56 → hkpc
+      - 🇨🇳 CN 55 → hkpc
       - 🇨🇳 CN 57 → hkpc
       - 🇨🇳 CN 58 → hkpc
       - 🇨🇳 CN 59 → hkpc
       - 🇨🇳 CN 6 → hkpc
       - 🇨🇳 CN 60 → hkpc
-      - 🇨🇳 CN 62 → hkpc
+      - 🇨🇳 CN 61 → hkpc
       - 🇨🇳 CN 63 → hkpc
       - 🇨🇳 CN 64 → hkpc
       - 🇨🇳 CN 65 → hkpc
-      - 🇨🇳 CN 68 → hkpc
+      - 🇨🇳 CN 66 → hkpc
+      - 🇨🇳 CN 69 → hkpc
       - 🇨🇳 CN 7 → hkpc
-      - 🇨🇳 CN 71 → hkpc
-      - 🇨🇳 CN 73 → hkpc
+      - 🇨🇳 CN 72 → hkpc
       - 🇨🇳 CN 74 → hkpc
-      - 🇨🇳 CN 76 → hkpc
-      - 🇨🇳 CN 79 → hkpc
+      - 🇨🇳 CN 75 → hkpc
+      - 🇨🇳 CN 77 → hkpc
       - 🇨🇳 CN 8 → hkpc
       - 🇨🇳 CN 80 → hkpc
       - 🇨🇳 CN 81 → hkpc
@@ -1854,16 +1841,17 @@ proxy-groups:
       - 🇨🇳 CN 83 → hkpc
       - 🇨🇳 CN 84 → hkpc
       - 🇨🇳 CN 85 → hkpc
-      - 🇨🇳 CN 87 → hkpc
+      - 🇨🇳 CN 86 → hkpc
       - 🇨🇳 CN 88 → hkpc
       - 🇨🇳 CN 89 → hkpc
       - 🇨🇳 CN 9 → hkpc
       - 🇨🇳 CN 90 → hkpc
-      - 🇨🇳 CN 92 → hkpc
-      - 🇨🇳 CN 94 → hkpc
+      - 🇨🇳 CN 91 → hkpc
+      - 🇨🇳 CN 93 → hkpc
       - 🇨🇳 CN 95 → hkpc
       - 🇨🇳 CN 96 → hkpc
       - 🇨🇳 CN 97 → hkpc
+      - 🇨🇳 CN 98 → hkpc
       - 🇩🇪 DE 1 → hkpc
       - 🇩🇪 DE 2 → hkpc
       - 🇩🇪 DE 3 → hkpc
@@ -1944,6 +1932,7 @@ proxy-groups:
       - CH 1 → hkpc
       - CL 1 → hkpc
       - CO 1 → hkpc
+      - CR 1 → hkpc
       - CY 1 → hkpc
       - EC 1 → hkpc
       - FI 1 → hkpc
@@ -1988,15 +1977,14 @@ proxy-groups:
       - 🇨🇦 CA 9 → hkpc
       - 🇨🇳 CN 1 → hkpc
       - 🇨🇳 CN 10 → hkpc
-      - 🇨🇳 CN 100 → hkpc
       - 🇨🇳 CN 101 → hkpc
       - 🇨🇳 CN 102 → hkpc
       - 🇨🇳 CN 103 → hkpc
-      - 🇨🇳 CN 105 → hkpc
-      - 🇨🇳 CN 107 → hkpc
+      - 🇨🇳 CN 104 → hkpc
+      - 🇨🇳 CN 106 → hkpc
       - 🇨🇳 CN 108 → hkpc
+      - 🇨🇳 CN 109 → hkpc
       - 🇨🇳 CN 11 → hkpc
-      - 🇨🇳 CN 110 → hkpc
       - 🇨🇳 CN 111 → hkpc
       - 🇨🇳 CN 112 → hkpc
       - 🇨🇳 CN 113 → hkpc
@@ -2009,7 +1997,7 @@ proxy-groups:
       - 🇨🇳 CN 12 → hkpc
       - 🇨🇳 CN 120 → hkpc
       - 🇨🇳 CN 121 → hkpc
-      - 🇨🇳 CN 123 → hkpc
+      - 🇨🇳 CN 122 → hkpc
       - 🇨🇳 CN 124 → hkpc
       - 🇨🇳 CN 125 → hkpc
       - 🇨🇳 CN 126 → hkpc
@@ -2017,12 +2005,12 @@ proxy-groups:
       - 🇨🇳 CN 128 → hkpc
       - 🇨🇳 CN 129 → hkpc
       - 🇨🇳 CN 13 → hkpc
-      - 🇨🇳 CN 135 → hkpc
+      - 🇨🇳 CN 130 → hkpc
       - 🇨🇳 CN 136 → hkpc
       - 🇨🇳 CN 137 → hkpc
-      - 🇨🇳 CN 139 → hkpc
+      - 🇨🇳 CN 138 → hkpc
       - 🇨🇳 CN 14 → hkpc
-      - 🇨🇳 CN 141 → hkpc
+      - 🇨🇳 CN 140 → hkpc
       - 🇨🇳 CN 142 → hkpc
       - 🇨🇳 CN 143 → hkpc
       - 🇨🇳 CN 144 → hkpc
@@ -2035,62 +2023,63 @@ proxy-groups:
       - 🇨🇳 CN 150 → hkpc
       - 🇨🇳 CN 151 → hkpc
       - 🇨🇳 CN 152 → hkpc
-      - 🇨🇳 CN 154 → hkpc
+      - 🇨🇳 CN 153 → hkpc
       - 🇨🇳 CN 155 → hkpc
       - 🇨🇳 CN 156 → hkpc
       - 🇨🇳 CN 157 → hkpc
-      - 🇨🇳 CN 159 → hkpc
+      - 🇨🇳 CN 158 → hkpc
       - 🇨🇳 CN 160 → hkpc
-      - 🇨🇳 CN 162 → hkpc
+      - 🇨🇳 CN 161 → hkpc
       - 🇨🇳 CN 163 → hkpc
       - 🇨🇳 CN 164 → hkpc
-      - 🇨🇳 CN 168 → hkpc
+      - 🇨🇳 CN 165 → hkpc
       - 🇨🇳 CN 169 → hkpc
       - 🇨🇳 CN 17 → hkpc
       - 🇨🇳 CN 170 → hkpc
-      - 🇨🇳 CN 172 → hkpc
+      - 🇨🇳 CN 171 → hkpc
       - 🇨🇳 CN 173 → hkpc
-      - 🇨🇳 CN 175 → hkpc
-      - 🇨🇳 CN 177 → hkpc
-      - 🇨🇳 CN 182 → hkpc
-      - 🇨🇳 CN 186 → hkpc
-      - 🇨🇳 CN 188 → hkpc
+      - 🇨🇳 CN 174 → hkpc
+      - 🇨🇳 CN 176 → hkpc
+      - 🇨🇳 CN 178 → hkpc
+      - 🇨🇳 CN 183 → hkpc
+      - 🇨🇳 CN 187 → hkpc
       - 🇨🇳 CN 189 → hkpc
       - 🇨🇳 CN 19 → hkpc
       - 🇨🇳 CN 190 → hkpc
       - 🇨🇳 CN 191 → hkpc
-      - 🇨🇳 CN 193 → hkpc
+      - 🇨🇳 CN 192 → hkpc
       - 🇨🇳 CN 194 → hkpc
       - 🇨🇳 CN 195 → hkpc
       - 🇨🇳 CN 196 → hkpc
       - 🇨🇳 CN 197 → hkpc
       - 🇨🇳 CN 198 → hkpc
+      - 🇨🇳 CN 199 → hkpc
       - 🇨🇳 CN 2 → hkpc
       - 🇨🇳 CN 20 → hkpc
-      - 🇨🇳 CN 200 → hkpc
       - 🇨🇳 CN 201 → hkpc
       - 🇨🇳 CN 202 → hkpc
       - 🇨🇳 CN 203 → hkpc
-      - 🇨🇳 CN 205 → hkpc
+      - 🇨🇳 CN 204 → hkpc
       - 🇨🇳 CN 206 → hkpc
       - 🇨🇳 CN 207 → hkpc
       - 🇨🇳 CN 208 → hkpc
       - 🇨🇳 CN 209 → hkpc
       - 🇨🇳 CN 210 → hkpc
+      - 🇨🇳 CN 211 → hkpc
       - 🇨🇳 CN 22 → hkpc
       - 🇨🇳 CN 24 → hkpc
       - 🇨🇳 CN 25 → hkpc
       - 🇨🇳 CN 27 → hkpc
       - 🇨🇳 CN 28 → hkpc
-      - 🇨🇳 CN 30 → hkpc
-      - 🇨🇳 CN 32 → hkpc
+      - 🇨🇳 CN 29 → hkpc
+      - 🇨🇳 CN 31 → hkpc
       - 🇨🇳 CN 33 → hkpc
       - 🇨🇳 CN 34 → hkpc
       - 🇨🇳 CN 35 → hkpc
       - 🇨🇳 CN 36 → hkpc
-      - 🇨🇳 CN 38 → hkpc
+      - 🇨🇳 CN 37 → hkpc
       - 🇨🇳 CN 39 → hkpc
-      - 🇨🇳 CN 41 → hkpc
+      - 🇨🇳 CN 40 → hkpc
       - 🇨🇳 CN 42 → hkpc
       - 🇨🇳 CN 43 → hkpc
       - 🇨🇳 CN 44 → hkpc
@@ -2105,23 +2094,23 @@ proxy-groups:
       - 🇨🇳 CN 52 → hkpc
       - 🇨🇳 CN 53 → hkpc
       - 🇨🇳 CN 54 → hkpc
-      - 🇨🇳 CN 56 → hkpc
+      - 🇨🇳 CN 55 → hkpc
       - 🇨🇳 CN 57 → hkpc
       - 🇨🇳 CN 58 → hkpc
       - 🇨🇳 CN 59 → hkpc
       - 🇨🇳 CN 6 → hkpc
       - 🇨🇳 CN 60 → hkpc
-      - 🇨🇳 CN 62 → hkpc
+      - 🇨🇳 CN 61 → hkpc
       - 🇨🇳 CN 63 → hkpc
       - 🇨🇳 CN 64 → hkpc
       - 🇨🇳 CN 65 → hkpc
-      - 🇨🇳 CN 68 → hkpc
+      - 🇨🇳 CN 66 → hkpc
+      - 🇨🇳 CN 69 → hkpc
       - 🇨🇳 CN 7 → hkpc
-      - 🇨🇳 CN 71 → hkpc
-      - 🇨🇳 CN 73 → hkpc
+      - 🇨🇳 CN 72 → hkpc
       - 🇨🇳 CN 74 → hkpc
-      - 🇨🇳 CN 76 → hkpc
-      - 🇨🇳 CN 79 → hkpc
+      - 🇨🇳 CN 75 → hkpc
+      - 🇨🇳 CN 77 → hkpc
       - 🇨🇳 CN 8 → hkpc
       - 🇨🇳 CN 80 → hkpc
       - 🇨🇳 CN 81 → hkpc
@@ -2129,16 +2118,17 @@ proxy-groups:
       - 🇨🇳 CN 83 → hkpc
       - 🇨🇳 CN 84 → hkpc
       - 🇨🇳 CN 85 → hkpc
-      - 🇨🇳 CN 87 → hkpc
+      - 🇨🇳 CN 86 → hkpc
       - 🇨🇳 CN 88 → hkpc
       - 🇨🇳 CN 89 → hkpc
       - 🇨🇳 CN 9 → hkpc
       - 🇨🇳 CN 90 → hkpc
-      - 🇨🇳 CN 92 → hkpc
-      - 🇨🇳 CN 94 → hkpc
+      - 🇨🇳 CN 91 → hkpc
+      - 🇨🇳 CN 93 → hkpc
       - 🇨🇳 CN 95 → hkpc
       - 🇨🇳 CN 96 → hkpc
       - 🇨🇳 CN 97 → hkpc
+      - 🇨🇳 CN 98 → hkpc
       - 🇨🇳 TW 1 → hkpc
       - 🇨🇳 TW 10 → hkpc
       - 🇨🇳 TW 11 → hkpc
@@ -2242,7 +2232,6 @@ proxy-groups:
       - 🇰🇷 KR 4 → hkpc
       - 🇰🇷 KR 5 → hkpc
       - 🇰🇷 KR 6 → hkpc
-      - 🇰🇷 KR 7 → hkpc
       - 🇳🇱 NL 1 → hkpc
       - 🇳🇱 NL 10 → hkpc
       - 🇳🇱 NL 11 → hkpc
@@ -2343,10 +2332,6 @@ proxy-groups:
       - 🇺🇸 US 7 → hkpc
       - 🇺🇸 US 70 → hkpc
       - 🇺🇸 US 71 → hkpc
-      - 🇺🇸 US 72 → hkpc
-      - 🇺🇸 US 73 → hkpc
-      - 🇺🇸 US 74 → hkpc
-      - 🇺🇸 US 75 → hkpc
       - 🇺🇸 US 8 → hkpc
       - 🇺🇸 US 9 → hkpc
   - name: 👉 国内网站
