@@ -2,10 +2,10 @@ def parse(data_in):
     dtp = []
     for x in data_in:
         dtp.append(x.replace('data/', ''))
-
+    
     dtpr1 = [x for x in dtp if "/" in x]
     dtpr2 = [x for x in dtpr1 if ".yaml" in x]
-
+    
     textdict = {}
     for x in dtpr2:
         try:
@@ -17,7 +17,7 @@ def parse(data_in):
         except ValueError:
             print(f"Error splitting '{x}'. Skipping this entry.")
             continue
-
+    
     return textdict
 
 def makeclash(dictin):
