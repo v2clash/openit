@@ -1650,21 +1650,6 @@ proxies:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 185 VMS"
-  server: us65.netfilx.live
-  port: 80
-  type: vmess
-  uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us65.netfilx.live
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 186 VMS"
   server: 172.67.130.140
   port: 2082
   type: vmess
@@ -1679,12 +1664,27 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 187 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 186 SSS"
   server: 38.75.136.135
   port: 8119
   type: ss
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 187 VMS"
+  server: russia.com
+  port: 2095
+  type: vmess
+  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v3/download.getFile
+    headers:
+      Host: ssrsub.v03.ssrsub.com
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 188 SSS"
   server: 38.121.43.97
@@ -2628,8 +2628,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 183 SSS"
   - "\U0001F1FA\U0001F1F8 US 184 VMS"
   - "\U0001F1FA\U0001F1F8 US 185 VMS"
-  - "\U0001F1FA\U0001F1F8 US 186 VMS"
-  - "\U0001F1FA\U0001F1F8 US 187 SSS"
+  - "\U0001F1FA\U0001F1F8 US 186 SSS"
+  - "\U0001F1FA\U0001F1F8 US 187 VMS"
   - "\U0001F1FA\U0001F1F8 US 188 SSS"
   - "\U0001F1FA\U0001F1F8 US 189 SSS"
   - "\U0001F1FA\U0001F1F8 US 190 SSS"
@@ -2905,8 +2905,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 183 SSS"
   - "\U0001F1FA\U0001F1F8 US 184 VMS"
   - "\U0001F1FA\U0001F1F8 US 185 VMS"
-  - "\U0001F1FA\U0001F1F8 US 186 VMS"
-  - "\U0001F1FA\U0001F1F8 US 187 SSS"
+  - "\U0001F1FA\U0001F1F8 US 186 SSS"
+  - "\U0001F1FA\U0001F1F8 US 187 VMS"
   - "\U0001F1FA\U0001F1F8 US 188 SSS"
   - "\U0001F1FA\U0001F1F8 US 189 SSS"
   - "\U0001F1FA\U0001F1F8 US 190 SSS"
